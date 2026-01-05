@@ -1,161 +1,302 @@
 # DiscordBotRulleteBan — Development Environment (WSL + Docker)
 
-Проект состоит из сервисов:
-- `postgres` — PostgreSQL
-- `backend` — ASP.NET Minimal API
-- `ds-bot` — Node.js (discord.js)
-- `admin-panel` — Vue (Vite)
+Проект состоит из 4 сервисов, каждый поднимается **вручную**:
 
-Каждый сервис поднимается **вручную**, по отдельности. Все команды `docker compose` выполнять **из корня проекта**, где находится `docker-compose.yml`.
+* `postgres` — база данных PostgreSQL
+* `backend` — ASP.NET Minimal API
+* `ds-bot` — Node.js (discord.js)
+* `admin-panel` — Vue (Vite)
 
----
-
-## 📋 Содержание
-- [Требования](#требования)
-- [Клонирование проекта](#клонирование-проекта)
-- [Переменные окружения](#переменные-окружения)
-- [Запуск сервисов](#запуск-сервисов)
-- [Полезные команды](#полезные-команды)
-- [Доступные адреса и порты](#доступные-адреса-и-порты)
-- [Вход в контейнеры](#вход-в-контейнеры)
-- [Рекомендации для разработчика ds-bot](#рекомендации-для-разработчика-ds-bot)
-- [Git + WSL (CRLF/LF)](#git--wsl-crlflf)
-- [Быстрый старт (чек-лист)](#быстрый-старт-чек-лист)
+Все команды `docker compose` выполнять **из корня проекта**, где расположен `docker-compose.yml`.
 
 ---
 
 ## Требования
 
 ### Windows
-- Docker Desktop
-- WSL2 (Ubuntu)
 
-В Docker Desktop обязательно включить:
-- `Settings → Resources → WSL Integration`
-- Интеграцию для вашей WSL-дистрибуции
+* Docker Desktop
+* WSL2 (Ubuntu или аналог)
+
+В Docker Desktop необходимо включить:
+
+* `Settings → Resources → WSL Integration`
+* интеграцию с вашей WSL-дистрибуцией
 
 ### WSL
-- git
-- (рекомендуется для разработки бота) Node.js 20+
+
+* git
+* (рекомендуется) Node.js 20+ для разработки бота и фронта
 
 Проверка Docker:
+
 ```bash
 docker --version
 docker compose version
-Клонирование проекта
-Пример для диска G::
+```
 
-bash
+---
+
+## Клонирование проекта
+
+Пример для диска `G:`:
+
+```bash
 cd /mnt/g/Project
 git clone <REPO_URL>
 cd DiscordBotRulleteBan
-Переменные окружения
-В репозитории хранится только .env.example. Создать локальный .env:
+```
 
-bash
+---
+
+## Переменные окружения
+
+В репозитории хранится только `.env.example`.
+
+Создать локальный `.env`:
+
+```bash
 cp .env.example .env
-Открыть .env и при необходимости заполнить:
+```
 
-DISCORD_TOKEN
+Минимум, что требуется заполнить:
 
-Файл .env не коммитится.
+* `DISCORD_TOKEN` (если бот должен подключаться к Discord)
 
-Запуск сервисов
-1) Postgres
-bash
+Файл `.env` **не коммитится**.
+
+---
+
+## Запуск сервисов
+
+### 1) Postgres
+
+```bash
 docker compose up -d postgres
+```
+
 Проверка:
 
-bash
+```bash
 docker compose ps
 docker compose logs -n 50 postgres
-2) Backend (ASP.NET)
-bash
+```
+
+---
+
+### 2) Backend (ASP.NET)
+
+```bash
 docker compose up -d backend
+```
+
 Проверка:
 
-bash
+```bash
 curl -4 http://127.0.0.1:8080/
+```
+
 Логи:
 
-bash
+```bash
 docker compose logs -f backend
-Backend должен таргетить .NET 8.0:
+```
 
-xml
+> Backend должен таргетить `.NET 8.0`
+
+```xml
 <TargetFramework>net8.0</TargetFramework>
-3) Admin panel (Vue + Vite)
-bash
+```
+
+---
+
+### 3) Admin panel (Vue + Vite)
+
+```bash
 docker compose up -d admin-panel
-Открыть в браузере: http://localhost:5173
+```
+
+Открыть в браузере:
+
+```
+http://localhost:5173
+```
 
 Логи:
 
-bash
+```bash
 docker compose logs -f admin-panel
-4) Discord bot
-bash
+```
+
+---
+
+### 4) Discord bot (ds-bot)
+
+```bash
 docker compose up -d ds-bot
+```
+
 Логи:
 
-bash
+```bash
 docker compose logs -f ds-bot
-Полезные команды
-Статус сервисов: docker compose ps
+```
 
-Остановить сервис: docker compose stop ds-bot
+---
 
-Перезапустить сервис: docker compose restart ds-bot
+## Полезные команды
 
-Пересобрать сервис: docker compose up -d --build ds-bot
+Статус сервисов:
 
-Остановить всё: docker compose down
+```bash
+docker compose ps
+```
 
-Полный сброс (включая volumes): docker compose down -v
+Остановить сервис:
 
-Доступные адреса и порты
-Сервис	Снаружи	В docker-сети
-Postgres	localhost:5432	postgres:5432
-Backend	http://localhost:8080	http://backend:8080
-Admin panel	http://localhost:5173	-
-Discord bot	Порт наружу не используется	-
-Проверка работы Discord bot — через логи.
+```bash
+docker compose stop ds-bot
+```
 
-Вход в контейнеры
-bash
-# Backend
+Перезапустить сервис:
+
+```bash
+docker compose restart ds-bot
+```
+
+Пересобрать сервис (после изменения зависимостей):
+
+```bash
+docker compose up -d --build ds-bot
+```
+
+Остановить всё:
+
+```bash
+docker compose down
+```
+
+Полный сброс (включая volumes):
+
+```bash
+docker compose down -v
+```
+
+---
+
+## Порты и адреса
+
+### Postgres
+
+* Снаружи (Windows / WSL): `localhost:5432`
+* Внутри docker-сети: `postgres:5432`
+
+### Backend
+
+* Снаружи: `http://localhost:8080`
+* Внутри docker-сети: `http://backend:8080`
+
+### Admin panel
+
+* `http://localhost:5173`
+
+### Discord bot
+
+* Внешний порт не используется
+* Проверка работы — через логи
+
+---
+
+## Вход в контейнеры
+
+Backend:
+
+```bash
 docker compose exec backend bash
+```
 
-# Admin panel
+Admin panel:
+
+```bash
 docker compose exec admin-panel sh
+```
 
-# Bot
+Discord bot:
+
+```bash
 docker compose exec ds-bot sh
+```
 
-# Postgres
+Postgres:
+
+```bash
 docker compose exec postgres sh
-Рекомендации для разработчика ds-bot
-Для комфортной разработки рекомендуется установить Node.js 20 в WSL:
+```
 
-bash
+---
+
+## Рекомендации по разработке
+
+### Node.js (для ds-bot и admin-panel)
+
+Для удобной локальной разработки рекомендуется установить Node.js 20 в WSL:
+
+```bash
 sudo apt update
 curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
 sudo apt install -y nodejs
 node -v
 npm -v
-Git + WSL (CRLF/LF)
+```
+
+### Git + WSL (CRLF/LF)
+
 В WSL выполнить один раз:
 
-bash
+```bash
 git config --global core.autocrlf input
-Быстрый старт (чек-лист)
-bash
+```
+
+`node_modules/`, `bin/`, `obj/` **не коммитятся** — зависимости и сборки происходят внутри Docker.
+
+---
+
+## Типовые проблемы
+
+### Контейнер стартует и сразу падает
+
+Смотреть логи:
+
+```bash
+docker compose logs -n 200 <service>
+```
+
+### Ошибка target framework (.NET)
+
+Backend должен использовать `.NET 8.0`:
+
+```xml
+<TargetFramework>net8.0</TargetFramework>
+```
+
+### Docker не найден в WSL
+
+Проверить, что включена WSL Integration в Docker Desktop.
+
+---
+
+## Быстрый старт (чек-лист)
+
+```bash
 cd /mnt/g/Project/DiscordBotRulleteBan
 cp .env.example .env
 
+# запуск сервисов
 docker compose up -d postgres
 docker compose up -d backend
 docker compose up -d admin-panel
 docker compose up -d ds-bot
 
+# проверка
 docker compose ps
+```
