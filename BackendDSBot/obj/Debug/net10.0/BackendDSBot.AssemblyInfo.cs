@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BackendDSBot")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+91589992d80fc17389851a1dc9df0d1935e2c6aa")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9597bba8849548acb75cb76d5e3740c20ff18a7d")]
 [assembly: System.Reflection.AssemblyProductAttribute("BackendDSBot")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BackendDSBot")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

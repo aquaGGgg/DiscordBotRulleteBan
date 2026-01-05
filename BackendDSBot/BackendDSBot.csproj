@@ -5,5 +5,61 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
-
+	
+	<ItemGroup>
+		<Folder Include="Application\" />
+		<Folder Include="Application/Abstractions\" />
+		<Folder Include="Application/Abstractions/Persistence\" />
+		<Folder Include="Application/Abstractions/Random\" />
+		<Folder Include="Application/Abstractions/Time\" />
+		<Folder Include="Application/Abstractions/Transactions\" />
+		<Folder Include="Application/BackgroundJobs\" />
+		<Folder Include="Application/Services\" />
+		<Folder Include="Application/UseCases\" />
+		<Folder Include="Application/UseCases/Admin\" />
+		<Folder Include="Application/UseCases/Admin/AdjustTickets\" />
+		<Folder Include="Application/UseCases/Admin/GetStats\" />
+		<Folder Include="Application/UseCases/Admin/GetUsers\" />
+		<Folder Include="Application/UseCases/Admin/ManualBan\" />
+		<Folder Include="Application/UseCases/Admin/ReleaseBan\" />
+		<Folder Include="Application/UseCases/Admin/RunBanRoulette\" />
+		<Folder Include="Application/UseCases/Admin/RunTicketRoulette\" />
+		<Folder Include="Application/UseCases/Admin/UpdateConfig\" />
+		<Folder Include="Application/UseCases/Bot\" />
+		<Folder Include="Application/UseCases/Bot/GetMe\" />
+		<Folder Include="Application/UseCases/Bot/PollBotJobs\" />
+		<Folder Include="Application/UseCases/Bot/SelfUnban\" />
+		<Folder Include="Application/UseCases/Bot/SyncEligibleUsers\" />
+		<Folder Include="Application/UseCases/Bot/TransferTickets\" />
+		<Folder Include="Application/UseCases/Bot/UpsertUser\" />
+		<Folder Include="Application/UseCases/Internal\" />
+		<Folder Include="Application/UseCases/Internal/CreateBotJob\" />
+		<Folder Include="Application/UseCases/Internal/ExpirePunishments\" />
+		<Folder Include="Contracts\" />
+		<Folder Include="Contracts/Admin\" />
+		<Folder Include="Contracts/Bot\" />
+		<Folder Include="Contracts/Common\" />
+		<Folder Include="Controllers\" />
+		<Folder Include="Controllers/Admin\" />
+		<Folder Include="Controllers/Bot\" />
+		<Folder Include="Domain\" />
+		<Folder Include="Domain/BotJobs\" />
+		<Folder Include="Domain/Punishments\" />
+		<Folder Include="Domain/Rounds\" />
+		<Folder Include="Domain/Shared\" />
+		<Folder Include="Domain/Tickets\" />
+		<Folder Include="Domain/Users\" />
+		<Folder Include="Filters\" />
+		<Folder Include="Infrastructure\" />
+		<Folder Include="Infrastructure/Persistence\" />
+		<Folder Include="Infrastructure/Persistence/Configurations\" />
+		<Folder Include="Infrastructure/Persistence/Entities\" />
+		<Folder Include="Infrastructure/Persistence/Migrations\" />
+		<Folder Include="Infrastructure/Persistence/Repositories\" />
+		<Folder Include="Infrastructure/Random\" />
+		<Folder Include="Infrastructure/Time\" />
+		<Folder Include="Infrastructure/Transactions\" />
+		<Folder Include="Mapping\" />
+		<Folder Include="Middleware\" />
+	</ItemGroup>
 </Project>
