@@ -11,7 +11,21 @@ services:
       - "${DB_PORT}:5432"
     volumes:
       - pg_data:/var/lib/postgresql/data
-    profiles: ["dev", "prod"]
+
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: dsbot-pgadmin
+    restart: unless-stopped
+    environment:
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD}
+      PGADMIN_CONFIG_SERVER_MODE: "False"
+    ports:
+      - "${PGADMIN_PORT}:80"
+    volumes:
+      - pgadmin_data:/var/lib/pgadmin
+    depends_on:
+      - postgres
 
   backend:
     container_name: dsbot-backend
@@ -29,7 +43,8 @@ services:
       - ./BackendDSBot:/src
     working_dir: /src
     command: ["dotnet","watch","run","--project","BackendDSBot.csproj","--urls","http://0.0.0.0:8080"]
-    profiles: ["dev"]
+    depends_on:
+      - postgres
 
   admin-panel:
     container_name: dsbot-admin-panel
@@ -47,7 +62,8 @@ services:
       - admin_node_modules:/app/node_modules
     working_dir: /app
     command: ["npm","run","dev","--","--host","0.0.0.0","--port","5173"]
-    profiles: ["dev"]
+    depends_on:
+      - backend
 
   ds-bot:
     container_name: dsbot-ds-bot
@@ -64,9 +80,11 @@ services:
       - bot_node_modules:/app/node_modules
     working_dir: /app
     command: ["npm","run","dev"]
-    profiles: ["dev"]
+    depends_on:
+      - backend
 
 volumes:
   pg_data:
+  pgadmin_data:
   bot_node_modules:
   admin_node_modules:
