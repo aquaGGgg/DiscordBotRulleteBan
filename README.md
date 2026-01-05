@@ -93,7 +93,7 @@ docker compose up -d backend
 Проверка:
 
 ```bash
-curl -4 http://127.0.0.1:8080/
+curl -4 http://127.0.0.1:8080/heath
 ```
 
 Логи:
