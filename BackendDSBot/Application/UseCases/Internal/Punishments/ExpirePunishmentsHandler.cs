@@ -12,6 +12,7 @@ public sealed class ExpirePunishmentsHandler
 {
     private readonly IPunishmentRepository _punishments;
     private readonly IPunishmentHistoryRepository _history;
+    private readonly IUserRepository _users;
     private readonly CreateBotJobHandler _createJob;
     private readonly IUnitOfWork _uow;
     private readonly ITimeProvider _time;
@@ -19,12 +20,14 @@ public sealed class ExpirePunishmentsHandler
     public ExpirePunishmentsHandler(
         IPunishmentRepository punishments,
         IPunishmentHistoryRepository history,
+        IUserRepository users,
         CreateBotJobHandler createJob,
         IUnitOfWork uow,
         ITimeProvider time)
     {
         _punishments = punishments;
         _history = history;
+        _users = users;
         _createJob = createJob;
         _uow = uow;
         _time = time;
@@ -42,7 +45,12 @@ public sealed class ExpirePunishmentsHandler
         var expired = await _punishments.GetExpiredActiveAsync(now, batch, ct);
         foreach (var p in expired)
         {
-            // Лочим конкретную запись через "UpdateAsync" (EF load tracked) и доменную идемпотентность
+            // Достаём discordUserId по UserId (да, это N+1; batch маленький, для MVP ок)
+            var user = await _users.GetByIdAsync(p.UserId, ct);
+            if (user is null)
+                continue;
+
+            // идемпотентность: если уже Ended — Domain выбросит/не даст, но сюда попадут Active
             p.Release(PunishmentReleaseReason.Expired, now);
             await _punishments.UpdateAsync(p, ct);
 
@@ -58,15 +66,15 @@ public sealed class ExpirePunishmentsHandler
             var payloadRelease = JsonSerializer.Serialize(new
             {
                 guildId = p.GuildId,
-                discordUserId = "unknown", // будет известно в шаге 7/8 через join, пока MVP: бот может не требовать
+                discordUserId = user.DiscordUserId,
                 punishmentId = p.Id
             });
 
-            // Dedup на punishmentId
+            // Dedup по наказанию
             await _createJob.HandleAsync(new CreateBotJobCommand(
                 Type: BotJobType.RELEASE_JAIL,
                 GuildId: p.GuildId,
-                DiscordUserId: "unknown",
+                DiscordUserId: user.DiscordUserId,
                 PayloadJson: payloadRelease,
                 DedupKey: $"release:{p.Id}",
                 RunAfter: null

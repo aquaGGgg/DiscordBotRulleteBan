@@ -6,9 +6,7 @@ using Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// --------------------
 // Controllers + Swagger
-// --------------------
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(o =>
@@ -16,9 +14,7 @@ builder.Services.AddSwaggerGen(o =>
     o.SwaggerDoc("v1", new() { Title = "BannedService API", Version = "v1" });
 });
 
-// --------------------
 // CORS (AdminPanel dev)
-// --------------------
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("DevCors", p =>
@@ -32,9 +28,7 @@ builder.Services.AddCors(options =>
     });
 });
 
-// --------------------
 // DbContext (PostgreSQL)
-// --------------------
 var cs = builder.Configuration.GetConnectionString("Default");
 if (string.IsNullOrWhiteSpace(cs))
     throw new InvalidOperationException("ConnectionStrings:Default is not configured.");
@@ -52,15 +46,15 @@ builder.Services.AddDbContext<BannedServiceDbContext>(opt =>
     opt.EnableSensitiveDataLogging(builder.Environment.IsDevelopment());
 });
 
-// --------------------
 // Layers DI
-// --------------------
 builder.Services.AddInfrastructure();
 builder.Services.AddApplication();
 
-// --------------------
+builder.Services.Configure<Application.BackgroundJobs.Options.WorkersOptions>(
+    builder.Configuration.GetSection("Workers"));
+
+
 // App
-// --------------------
 var app = builder.Build();
 
 // Global error -> ProblemDetails
@@ -81,10 +75,6 @@ app.UseCors("DevCors");
 // Controllers
 app.MapControllers();
 
-// --------------------
-// (Optional) Auto-migrate on start
-// включается: AutoMigrate=true (env or appsettings)
-// --------------------
 var autoMigrate = app.Configuration.GetValue<bool>("AutoMigrate");
 if (autoMigrate)
 {

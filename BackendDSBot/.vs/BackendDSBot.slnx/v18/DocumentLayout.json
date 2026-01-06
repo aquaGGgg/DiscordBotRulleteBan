@@ -7,12 +7,584 @@
       "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\infrastructure\\random\\systemrandomprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:infrastructure\\random\\systemrandomprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:infrastructure\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:application\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\application\\backgroundjobs\\rouletteworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:application\\backgroundjobs\\rouletteworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\application\\backgroundjobs\\expirepunishmentsworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:application\\backgroundjobs\\expirepunishmentsworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\application\\usecases\\internal\\punishments\\expirepunishmentshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:application\\usecases\\internal\\punishments\\expirepunishmentshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\application\\backgroundjobs\\options\\workersoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:application\\backgroundjobs\\options\\workersoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\controllers\\admin\\adminroulettecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:controllers\\admin\\adminroulettecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\application\\usecases\\admin\\roulette\\runticketroulettehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:application\\usecases\\admin\\roulette\\runticketroulettehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\contracts\\bot\\me\\synceligibleuserscontracts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:contracts\\bot\\me\\synceligibleuserscontracts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\application\\usecases\\admin\\roulette\\runbanroulettehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:application\\usecases\\admin\\roulette\\runbanroulettehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\application\\usecases\\admin\\roulette\\runticketroulettemodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:application\\usecases\\admin\\roulette\\runticketroulettemodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\application\\usecases\\admin\\roulette\\runbanroulettemodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:application\\usecases\\admin\\roulette\\runbanroulettemodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\controllers\\admin\\adminstatscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:controllers\\admin\\adminstatscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\contracts\\admin\\stats\\statscontracts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:contracts\\admin\\stats\\statscontracts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\controllers\\bot\\boteligibleuserscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:controllers\\bot\\boteligibleuserscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\controllers\\admin\\adminconfigcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:controllers\\admin\\adminconfigcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\controllers\\admin\\adminpunishmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:controllers\\admin\\adminpunishmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\controllers\\admin\\adminticketscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:controllers\\admin\\adminticketscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\controllers\\admin\\adminuserscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:controllers\\admin\\adminuserscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\controllers\\bot\\botjobscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:controllers\\bot\\botjobscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\controllers\\bot\\botticketscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:controllers\\bot\\botticketscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\controllers\\bot\\botpunishmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:controllers\\bot\\botpunishmentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\controllers\\bot\\botmecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:controllers\\bot\\botmecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\controllers\\bot\\botuserscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:controllers\\bot\\botuserscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\contracts\\admin\\roulette\\roulettecontracts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:contracts\\admin\\roulette\\roulettecontracts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\contracts\\admin\\config\\configcontracts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:contracts\\admin\\config\\configcontracts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\contracts\\admin\\punishments\\releasepunishmentcontracts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:contracts\\admin\\punishments\\releasepunishmentcontracts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\contracts\\admin\\punishments\\manualbancontracts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:contracts\\admin\\punishments\\manualbancontracts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\contracts\\admin\\tickets\\adjustticketscontracts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:contracts\\admin\\tickets\\adjustticketscontracts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\contracts\\admin\\users\\adminuserscontracts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:contracts\\admin\\users\\adminuserscontracts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\contracts\\bot\\jobs\\botjobscontracts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:contracts\\bot\\jobs\\botjobscontracts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\contracts\\bot\\tickets\\transferticketscontracts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:contracts\\bot\\tickets\\transferticketscontracts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\contracts\\bot\\punishments\\selfunbancontracts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:contracts\\bot\\punishments\\selfunbancontracts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\contracts\\bot\\me\\botmecontracts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:contracts\\bot\\me\\botmecontracts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\contracts\\bot\\eligible\\synceligibleuserscontracts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:contracts\\bot\\eligible\\synceligibleuserscontracts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\contracts\\bot\\users\\upsertusercontracts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:contracts\\bot\\users\\upsertusercontracts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\middleware\\middlewareextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:middleware\\middlewareextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\middleware\\exceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:middleware\\exceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\application\\usecases\\admin\\config\\updateconfighandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:application\\usecases\\admin\\config\\updateconfighandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\application\\usecases\\admin\\config\\updateconfigmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:application\\usecases\\admin\\config\\updateconfigmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\application\\usecases\\admin\\config\\getconfighandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:application\\usecases\\admin\\config\\getconfighandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\application\\usecases\\admin\\config\\getconfigmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:application\\usecases\\admin\\config\\getconfigmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\infrastructure\\persistence\\repositories\\readmodelsqueries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:infrastructure\\persistence\\repositories\\readmodelsqueries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\application\\usecases\\internal\\punishments\\expirepunishmentsmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:application\\usecases\\internal\\punishments\\expirepunishmentsmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\application\\usecases\\admin\\stats\\getstatshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:application\\usecases\\admin\\stats\\getstatshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\application\\usecases\\admin\\stats\\getstatsmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:application\\usecases\\admin\\stats\\getstatsmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\application\\usecases\\admin\\punishments\\releasepunishmenthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:application\\usecases\\admin\\punishments\\releasepunishmenthandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\application\\usecases\\admin\\punishments\\releasepunishmentmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:application\\usecases\\admin\\punishments\\releasepunishmentmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\application\\usecases\\admin\\punishments\\manualbanhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:application\\usecases\\admin\\punishments\\manualbanhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\application\\usecases\\admin\\punishments\\manualbanmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:application\\usecases\\admin\\punishments\\manualbanmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\application\\usecases\\admin\\tickets\\adjustticketshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:application\\usecases\\admin\\tickets\\adjustticketshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\application\\usecases\\admin\\tickets\\adjustticketsmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:application\\usecases\\admin\\tickets\\adjustticketsmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\application\\usecases\\admin\\users\\listusershandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:application\\usecases\\admin\\users\\listusershandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\application\\usecases\\admin\\users\\listusersmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:application\\usecases\\admin\\users\\listusersmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\application\\usecases\\bot\\jobs\\markjobfailedhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:application\\usecases\\bot\\jobs\\markjobfailedhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\application\\usecases\\bot\\jobs\\markjobfailedmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:application\\usecases\\bot\\jobs\\markjobfailedmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\application\\usecases\\bot\\jobs\\markjobdonehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:application\\usecases\\bot\\jobs\\markjobdonehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\application\\usecases\\bot\\jobs\\markjobdonemodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:application\\usecases\\bot\\jobs\\markjobdonemodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\application\\usecases\\bot\\jobs\\polljobshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:application\\usecases\\bot\\jobs\\polljobshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\application\\usecases\\bot\\jobs\\polljobsmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:application\\usecases\\bot\\jobs\\polljobsmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\application\\usecases\\bot\\punishments\\selfunbanhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:application\\usecases\\bot\\punishments\\selfunbanhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\application\\usecases\\bot\\punishments\\selfunbanmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:application\\usecases\\bot\\punishments\\selfunbanmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\application\\usecases\\bot\\tickets\\transferticketshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:application\\usecases\\bot\\tickets\\transferticketshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\application\\usecases\\bot\\tickets\\transferticketsmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:application\\usecases\\bot\\tickets\\transferticketsmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\application\\usecases\\bot\\me\\getmehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:application\\usecases\\bot\\me\\getmehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\application\\usecases\\bot\\me\\getmemodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:application\\usecases\\bot\\me\\getmemodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\application\\usecases\\bot\\eligible\\synceligibleusershandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:application\\usecases\\bot\\eligible\\synceligibleusershandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\application\\usecases\\bot\\eligible\\synceligibleusersmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:application\\usecases\\bot\\eligible\\synceligibleusersmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\application\\usecases\\bot\\users\\upsertuserhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:application\\usecases\\bot\\users\\upsertuserhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\application\\usecases\\bot\\users\\upsertusermodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:application\\usecases\\bot\\users\\upsertusermodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\application\\usecases\\internal\\createbotjob\\createbotjobhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:application\\usecases\\internal\\createbotjob\\createbotjobhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\application\\usecases\\internal\\createbotjob\\createbotjobmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:application\\usecases\\internal\\createbotjob\\createbotjobmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\application\\services\\tickets\\systemaccounts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:application\\services\\tickets\\systemaccounts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\application\\services\\validation\\ensure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:application\\services\\validation\\ensure.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\application\\services\\errors\\errorcodes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:application\\services\\errors\\errorcodes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\application\\abstractions\\persistence\\ireadmodelsqueries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:application\\abstractions\\persistence\\ireadmodelsqueries.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\infrastructure\\persistence\\repositories\\punishmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:infrastructure\\persistence\\repositories\\punishmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\infrastructure\\persistence\\repositories\\botjobrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:infrastructure\\persistence\\repositories\\botjobrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\infrastructure\\persistence\\repositories\\configrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:infrastructure\\persistence\\repositories\\configrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\mapping\\entitymappers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:mapping\\entitymappers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\infrastructure\\persistence\\repositories\\rouletteroundrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:infrastructure\\persistence\\repositories\\rouletteroundrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\infrastructure\\persistence\\repositories\\eligibleusersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:infrastructure\\persistence\\repositories\\eligibleusersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\infrastructure\\persistence\\repositories\\punishmenthistoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:infrastructure\\persistence\\repositories\\punishmenthistoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\infrastructure\\persistence\\repositories\\tickettransferrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:infrastructure\\persistence\\repositories\\tickettransferrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\infrastructure\\persistence\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:infrastructure\\persistence\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\infrastructure\\persistence\\repositories\\dbcommandextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:infrastructure\\persistence\\repositories\\dbcommandextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\infrastructure\\random\\cryptorandomprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:infrastructure\\random\\cryptorandomprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\infrastructure\\time\\systemtimeprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:infrastructure\\time\\systemtimeprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\infrastructure\\transactions\\efunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:infrastructure\\transactions\\efunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\infrastructure\\transactions\\efapptransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:infrastructure\\transactions\\efapptransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\infrastructure\\persistence\\bannedservicedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:infrastructure\\persistence\\bannedservicedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\application\\services\\errors\\appexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:application\\services\\errors\\appexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\application\\services\\errors\\apperror.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:application\\services\\errors\\apperror.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\application\\abstractions\\persistence\\ibotjobrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:application\\abstractions\\persistence\\ibotjobrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\application\\abstractions\\persistence\\irouletteroundrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:application\\abstractions\\persistence\\irouletteroundrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\application\\abstractions\\persistence\\ieligibleusersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:application\\abstractions\\persistence\\ieligibleusersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\application\\abstractions\\persistence\\iconfigrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:application\\abstractions\\persistence\\iconfigrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\application\\abstractions\\persistence\\ipunishmenthistoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:application\\abstractions\\persistence\\ipunishmenthistoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\application\\abstractions\\persistence\\itickettransferrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:application\\abstractions\\persistence\\itickettransferrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\application\\abstractions\\persistence\\ipunishmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:application\\abstractions\\persistence\\ipunishmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\application\\abstractions\\persistence\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:application\\abstractions\\persistence\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\application\\abstractions\\transactions\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:application\\abstractions\\transactions\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\application\\abstractions\\transactions\\iapptransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:application\\abstractions\\transactions\\iapptransaction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\application\\abstractions\\random\\irandomprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:application\\abstractions\\random\\irandomprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\application\\abstractions\\time\\itimeprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:application\\abstractions\\time\\itimeprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\domain\\botjobs\\botjob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:domain\\botjobs\\botjob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\domain\\botjobs\\botjobstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:domain\\botjobs\\botjobstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\domain\\botjobs\\botjobtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:domain\\botjobs\\botjobtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\domain\\rounds\\rouletteround.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:domain\\rounds\\rouletteround.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\domain\\rounds\\rouletteroundtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:domain\\rounds\\rouletteroundtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\domain\\users\\eligibleusersnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:domain\\users\\eligibleusersnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\domain\\rounds\\config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:domain\\rounds\\config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\domain\\punishments\\punishmenthistoryrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:domain\\punishments\\punishmenthistoryrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\domain\\punishments\\punishmenthistoryeventtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:domain\\punishments\\punishmenthistoryeventtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\domain\\tickets\\tickettransfer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:domain\\tickets\\tickettransfer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\domain\\tickets\\tickettransferreason.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:domain\\tickets\\tickettransferreason.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\domain\\punishments\\punishment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:domain\\punishments\\punishment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\domain\\punishments\\punishmentstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:domain\\punishments\\punishmentstatus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\domain\\users\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:domain\\users\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\domain\\shared\\guard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:domain\\shared\\guard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\domain\\shared\\domainexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:domain\\shared\\domainexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\infrastructure\\persistence\\migrations\\bannedservicedbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:infrastructure\\persistence\\migrations\\bannedservicedbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\infrastructure\\persistence\\migrations\\20260106000100_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:infrastructure\\persistence\\migrations\\20260106000100_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\infrastructure\\persistence\\configurations\\botjobentityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:infrastructure\\persistence\\configurations\\botjobentityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\infrastructure\\persistence\\configurations\\rouletteroundentityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:infrastructure\\persistence\\configurations\\rouletteroundentityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\infrastructure\\persistence\\configurations\\eligibleuserentityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:infrastructure\\persistence\\configurations\\eligibleuserentityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\infrastructure\\persistence\\configurations\\configentityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:infrastructure\\persistence\\configurations\\configentityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\infrastructure\\persistence\\configurations\\punishmenthistoryentityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:infrastructure\\persistence\\configurations\\punishmenthistoryentityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\infrastructure\\persistence\\configurations\\tickettransferentityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:infrastructure\\persistence\\configurations\\tickettransferentityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\infrastructure\\persistence\\configurations\\punishmententityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:infrastructure\\persistence\\configurations\\punishmententityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\infrastructure\\persistence\\configurations\\userentityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:infrastructure\\persistence\\configurations\\userentityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\infrastructure\\persistence\\entities\\botjobentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:infrastructure\\persistence\\entities\\botjobentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\infrastructure\\persistence\\entities\\rouletteroundentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:infrastructure\\persistence\\entities\\rouletteroundentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\infrastructure\\persistence\\entities\\eligibleuserentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:infrastructure\\persistence\\entities\\eligibleuserentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\infrastructure\\persistence\\entities\\configentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:infrastructure\\persistence\\entities\\configentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\infrastructure\\persistence\\entities\\punishmenthistoryentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:infrastructure\\persistence\\entities\\punishmenthistoryentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\infrastructure\\persistence\\entities\\tickettransferentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:infrastructure\\persistence\\entities\\tickettransferentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\infrastructure\\persistence\\entities\\punishmententity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:infrastructure\\persistence\\entities\\punishmententity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\infrastructure\\persistence\\entities\\userentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:infrastructure\\persistence\\entities\\userentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\infrastructure\\persistence\\entities\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:infrastructure\\persistence\\entities\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\infrastructure\\persistence\\designtimedbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:infrastructure\\persistence\\designtimedbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\backenddsbot.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:backenddsbot.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|g:\\project\\discordbotrulleteban\\backenddsbot\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{BC826982-962E-DDA2-A84C-7B6ED666C190}|BackendDSBot.csproj|solutionrelative:dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,8 +594,112 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 8,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SystemRandomProvider.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Random\\SystemRandomProvider.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Random\\SystemRandomProvider.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Random\\SystemRandomProvider.cs",
+              "RelativeToolTip": "Infrastructure\\Random\\SystemRandomProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T15:11:06.538Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RunTicketRouletteHandler.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Admin\\Roulette\\RunTicketRouletteHandler.cs",
+              "RelativeDocumentMoniker": "Application\\UseCases\\Admin\\Roulette\\RunTicketRouletteHandler.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Admin\\Roulette\\RunTicketRouletteHandler.cs",
+              "RelativeToolTip": "Application\\UseCases\\Admin\\Roulette\\RunTicketRouletteHandler.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAQwHoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T14:28:00.706Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "RunBanRouletteHandler.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Admin\\Roulette\\RunBanRouletteHandler.cs",
+              "RelativeDocumentMoniker": "Application\\UseCases\\Admin\\Roulette\\RunBanRouletteHandler.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Admin\\Roulette\\RunBanRouletteHandler.cs",
+              "RelativeToolTip": "Application\\UseCases\\Admin\\Roulette\\RunBanRouletteHandler.cs",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAQwJkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T14:22:47.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "RunTicketRouletteModels.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Admin\\Roulette\\RunTicketRouletteModels.cs",
+              "RelativeDocumentMoniker": "Application\\UseCases\\Admin\\Roulette\\RunTicketRouletteModels.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Admin\\Roulette\\RunTicketRouletteModels.cs",
+              "RelativeToolTip": "Application\\UseCases\\Admin\\Roulette\\RunTicketRouletteModels.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T14:22:31.198Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "RunBanRouletteModels.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Admin\\Roulette\\RunBanRouletteModels.cs",
+              "RelativeDocumentMoniker": "Application\\UseCases\\Admin\\Roulette\\RunBanRouletteModels.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Admin\\Roulette\\RunBanRouletteModels.cs",
+              "RelativeToolTip": "Application\\UseCases\\Admin\\Roulette\\RunBanRouletteModels.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T14:22:18.934Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AdminRouletteController.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Controllers\\Admin\\AdminRouletteController.cs",
+              "RelativeDocumentMoniker": "Controllers\\Admin\\AdminRouletteController.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Controllers\\Admin\\AdminRouletteController.cs",
+              "RelativeToolTip": "Controllers\\Admin\\AdminRouletteController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T14:21:42.306Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "Application\\DependencyInjection.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\DependencyInjection.cs",
+              "RelativeToolTip": "Application\\DependencyInjection.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAC4AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T14:03:21.509Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SyncEligibleUsersContracts.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Contracts\\Bot\\Me\\SyncEligibleUsersContracts.cs",
+              "RelativeDocumentMoniker": "Contracts\\Bot\\Me\\SyncEligibleUsersContracts.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Contracts\\Bot\\Me\\SyncEligibleUsersContracts.cs",
+              "RelativeToolTip": "Contracts\\Bot\\Me\\SyncEligibleUsersContracts.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T14:10:42.605Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -32,7 +708,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAAQwDgAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-05T12:08:01.679Z",
               "EditorCaption": ""
@@ -40,26 +716,1783 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\DependencyInjection.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\DependencyInjection.cs",
+              "RelativeToolTip": "Infrastructure\\DependencyInjection.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAmwCIAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:17:03.552Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "WorkersOptions.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\BackgroundJobs\\Options\\WorkersOptions.cs",
+              "RelativeDocumentMoniker": "Application\\BackgroundJobs\\Options\\WorkersOptions.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\BackgroundJobs\\Options\\WorkersOptions.cs",
+              "RelativeToolTip": "Application\\BackgroundJobs\\Options\\WorkersOptions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T15:03:03.645Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ExpirePunishmentsWorker.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\BackgroundJobs\\ExpirePunishmentsWorker.cs",
+              "RelativeDocumentMoniker": "Application\\BackgroundJobs\\ExpirePunishmentsWorker.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\BackgroundJobs\\ExpirePunishmentsWorker.cs",
+              "RelativeToolTip": "Application\\BackgroundJobs\\ExpirePunishmentsWorker.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAQwFIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T15:04:11.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RouletteWorker.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\BackgroundJobs\\RouletteWorker.cs",
+              "RelativeDocumentMoniker": "Application\\BackgroundJobs\\RouletteWorker.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\BackgroundJobs\\RouletteWorker.cs",
+              "RelativeToolTip": "Application\\BackgroundJobs\\RouletteWorker.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAQwFYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T15:04:31.25Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ExpirePunishmentsHandler.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Internal\\Punishments\\ExpirePunishmentsHandler.cs",
+              "RelativeDocumentMoniker": "Application\\UseCases\\Internal\\Punishments\\ExpirePunishmentsHandler.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Internal\\Punishments\\ExpirePunishmentsHandler.cs",
+              "RelativeToolTip": "Application\\UseCases\\Internal\\Punishments\\ExpirePunishmentsHandler.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAowFsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:53:07.469Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AdminStatsController.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Controllers\\Admin\\AdminStatsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\Admin\\AdminStatsController.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Controllers\\Admin\\AdminStatsController.cs",
+              "RelativeToolTip": "Controllers\\Admin\\AdminStatsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T14:21:31.183Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AdminConfigController.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Controllers\\Admin\\AdminConfigController.cs",
+              "RelativeDocumentMoniker": "Controllers\\Admin\\AdminConfigController.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Controllers\\Admin\\AdminConfigController.cs",
+              "RelativeToolTip": "Controllers\\Admin\\AdminConfigController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAxwD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T14:19:03.393Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AdminPunishmentsController.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Controllers\\Admin\\AdminPunishmentsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\Admin\\AdminPunishmentsController.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Controllers\\Admin\\AdminPunishmentsController.cs",
+              "RelativeToolTip": "Controllers\\Admin\\AdminPunishmentsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T14:18:49.729Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AdminTicketsController.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Controllers\\Admin\\AdminTicketsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\Admin\\AdminTicketsController.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Controllers\\Admin\\AdminTicketsController.cs",
+              "RelativeToolTip": "Controllers\\Admin\\AdminTicketsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T14:18:34.049Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AdminUsersController.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Controllers\\Admin\\AdminUsersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\Admin\\AdminUsersController.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Controllers\\Admin\\AdminUsersController.cs",
+              "RelativeToolTip": "Controllers\\Admin\\AdminUsersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T14:18:23.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "BotJobsController.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Controllers\\Bot\\BotJobsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\Bot\\BotJobsController.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Controllers\\Bot\\BotJobsController.cs",
+              "RelativeToolTip": "Controllers\\Bot\\BotJobsController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAQwDUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T14:18:06.758Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "BotEligibleUsersController.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Controllers\\Bot\\BotEligibleUsersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\Bot\\BotEligibleUsersController.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Controllers\\Bot\\BotEligibleUsersController.cs",
+              "RelativeToolTip": "Controllers\\Bot\\BotEligibleUsersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T14:17:08.465Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "BotTicketsController.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Controllers\\Bot\\BotTicketsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\Bot\\BotTicketsController.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Controllers\\Bot\\BotTicketsController.cs",
+              "RelativeToolTip": "Controllers\\Bot\\BotTicketsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T14:17:55.679Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "BotPunishmentsController.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Controllers\\Bot\\BotPunishmentsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\Bot\\BotPunishmentsController.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Controllers\\Bot\\BotPunishmentsController.cs",
+              "RelativeToolTip": "Controllers\\Bot\\BotPunishmentsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T14:17:42.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "BotMeController.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Controllers\\Bot\\BotMeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\Bot\\BotMeController.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Controllers\\Bot\\BotMeController.cs",
+              "RelativeToolTip": "Controllers\\Bot\\BotMeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T14:17:21.882Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "BotUsersController.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Controllers\\Bot\\BotUsersController.cs",
+              "RelativeDocumentMoniker": "Controllers\\Bot\\BotUsersController.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Controllers\\Bot\\BotUsersController.cs",
+              "RelativeToolTip": "Controllers\\Bot\\BotUsersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T14:16:56.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "StatsContracts.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Contracts\\Admin\\Stats\\StatsContracts.cs",
+              "RelativeDocumentMoniker": "Contracts\\Admin\\Stats\\StatsContracts.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Contracts\\Admin\\Stats\\StatsContracts.cs",
+              "RelativeToolTip": "Contracts\\Admin\\Stats\\StatsContracts.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T14:14:40.386Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "RouletteContracts.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Contracts\\Admin\\Roulette\\RouletteContracts.cs",
+              "RelativeDocumentMoniker": "Contracts\\Admin\\Roulette\\RouletteContracts.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Contracts\\Admin\\Roulette\\RouletteContracts.cs",
+              "RelativeToolTip": "Contracts\\Admin\\Roulette\\RouletteContracts.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T14:15:30.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ConfigContracts.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Contracts\\Admin\\Config\\ConfigContracts.cs",
+              "RelativeDocumentMoniker": "Contracts\\Admin\\Config\\ConfigContracts.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Contracts\\Admin\\Config\\ConfigContracts.cs",
+              "RelativeToolTip": "Contracts\\Admin\\Config\\ConfigContracts.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T14:14:23.071Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ReleasePunishmentContracts.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Contracts\\Admin\\Punishments\\ReleasePunishmentContracts.cs",
+              "RelativeDocumentMoniker": "Contracts\\Admin\\Punishments\\ReleasePunishmentContracts.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Contracts\\Admin\\Punishments\\ReleasePunishmentContracts.cs",
+              "RelativeToolTip": "Contracts\\Admin\\Punishments\\ReleasePunishmentContracts.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T14:14:04.312Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ManualBanContracts.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Contracts\\Admin\\Punishments\\ManualBanContracts.cs",
+              "RelativeDocumentMoniker": "Contracts\\Admin\\Punishments\\ManualBanContracts.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Contracts\\Admin\\Punishments\\ManualBanContracts.cs",
+              "RelativeToolTip": "Contracts\\Admin\\Punishments\\ManualBanContracts.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T14:13:52.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "AdjustTicketsContracts.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Contracts\\Admin\\Tickets\\AdjustTicketsContracts.cs",
+              "RelativeDocumentMoniker": "Contracts\\Admin\\Tickets\\AdjustTicketsContracts.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Contracts\\Admin\\Tickets\\AdjustTicketsContracts.cs",
+              "RelativeToolTip": "Contracts\\Admin\\Tickets\\AdjustTicketsContracts.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T14:13:31.993Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "AdminUsersContracts.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Contracts\\Admin\\Users\\AdminUsersContracts.cs",
+              "RelativeDocumentMoniker": "Contracts\\Admin\\Users\\AdminUsersContracts.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Contracts\\Admin\\Users\\AdminUsersContracts.cs",
+              "RelativeToolTip": "Contracts\\Admin\\Users\\AdminUsersContracts.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T14:13:12.353Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "BotJobsContracts.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Contracts\\Bot\\Jobs\\BotJobsContracts.cs",
+              "RelativeDocumentMoniker": "Contracts\\Bot\\Jobs\\BotJobsContracts.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Contracts\\Bot\\Jobs\\BotJobsContracts.cs",
+              "RelativeToolTip": "Contracts\\Bot\\Jobs\\BotJobsContracts.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T14:12:37.633Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "TransferTicketsContracts.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Contracts\\Bot\\Tickets\\TransferTicketsContracts.cs",
+              "RelativeDocumentMoniker": "Contracts\\Bot\\Tickets\\TransferTicketsContracts.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Contracts\\Bot\\Tickets\\TransferTicketsContracts.cs",
+              "RelativeToolTip": "Contracts\\Bot\\Tickets\\TransferTicketsContracts.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T14:12:16.302Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "SelfUnbanContracts.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Contracts\\Bot\\Punishments\\SelfUnbanContracts.cs",
+              "RelativeDocumentMoniker": "Contracts\\Bot\\Punishments\\SelfUnbanContracts.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Contracts\\Bot\\Punishments\\SelfUnbanContracts.cs",
+              "RelativeToolTip": "Contracts\\Bot\\Punishments\\SelfUnbanContracts.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T14:11:33.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "BotMeContracts.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Contracts\\Bot\\Me\\BotMeContracts.cs",
+              "RelativeDocumentMoniker": "Contracts\\Bot\\Me\\BotMeContracts.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Contracts\\Bot\\Me\\BotMeContracts.cs",
+              "RelativeToolTip": "Contracts\\Bot\\Me\\BotMeContracts.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T14:11:11.041Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "SyncEligibleUsersContracts.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Contracts\\Bot\\Eligible\\SyncEligibleUsersContracts.cs",
+              "RelativeDocumentMoniker": "Contracts\\Bot\\Eligible\\SyncEligibleUsersContracts.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Contracts\\Bot\\Eligible\\SyncEligibleUsersContracts.cs",
+              "RelativeToolTip": "Contracts\\Bot\\Eligible\\SyncEligibleUsersContracts.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T14:10:19.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "UpsertUserContracts.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Contracts\\Bot\\Users\\UpsertUserContracts.cs",
+              "RelativeDocumentMoniker": "Contracts\\Bot\\Users\\UpsertUserContracts.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Contracts\\Bot\\Users\\UpsertUserContracts.cs",
+              "RelativeToolTip": "Contracts\\Bot\\Users\\UpsertUserContracts.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T14:09:59.479Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "MiddlewareExtensions.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Middleware\\MiddlewareExtensions.cs",
+              "RelativeDocumentMoniker": "Middleware\\MiddlewareExtensions.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Middleware\\MiddlewareExtensions.cs",
+              "RelativeToolTip": "Middleware\\MiddlewareExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T14:02:52.974Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "ExceptionHandlingMiddleware.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Middleware\\ExceptionHandlingMiddleware.cs",
+              "RelativeDocumentMoniker": "Middleware\\ExceptionHandlingMiddleware.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Middleware\\ExceptionHandlingMiddleware.cs",
+              "RelativeToolTip": "Middleware\\ExceptionHandlingMiddleware.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwEUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T14:02:38.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "ExpirePunishmentsModels.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Internal\\Punishments\\ExpirePunishmentsModels.cs",
+              "RelativeDocumentMoniker": "Application\\UseCases\\Internal\\Punishments\\ExpirePunishmentsModels.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Internal\\Punishments\\ExpirePunishmentsModels.cs",
+              "RelativeToolTip": "Application\\UseCases\\Internal\\Punishments\\ExpirePunishmentsModels.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:52:56.175Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "GetStatsHandler.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Admin\\Stats\\GetStatsHandler.cs",
+              "RelativeDocumentMoniker": "Application\\UseCases\\Admin\\Stats\\GetStatsHandler.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Admin\\Stats\\GetStatsHandler.cs",
+              "RelativeToolTip": "Application\\UseCases\\Admin\\Stats\\GetStatsHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:52:18.539Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "GetStatsModels.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Admin\\Stats\\GetStatsModels.cs",
+              "RelativeDocumentMoniker": "Application\\UseCases\\Admin\\Stats\\GetStatsModels.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Admin\\Stats\\GetStatsModels.cs",
+              "RelativeToolTip": "Application\\UseCases\\Admin\\Stats\\GetStatsModels.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:52:09.792Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "UpdateConfigHandler.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Admin\\Config\\UpdateConfigHandler.cs",
+              "RelativeDocumentMoniker": "Application\\UseCases\\Admin\\Config\\UpdateConfigHandler.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Admin\\Config\\UpdateConfigHandler.cs",
+              "RelativeToolTip": "Application\\UseCases\\Admin\\Config\\UpdateConfigHandler.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA1wDEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:51:50.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "UpdateConfigModels.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Admin\\Config\\UpdateConfigModels.cs",
+              "RelativeDocumentMoniker": "Application\\UseCases\\Admin\\Config\\UpdateConfigModels.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Admin\\Config\\UpdateConfigModels.cs",
+              "RelativeToolTip": "Application\\UseCases\\Admin\\Config\\UpdateConfigModels.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:51:31.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "GetConfigHandler.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Admin\\Config\\GetConfigHandler.cs",
+              "RelativeDocumentMoniker": "Application\\UseCases\\Admin\\Config\\GetConfigHandler.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Admin\\Config\\GetConfigHandler.cs",
+              "RelativeToolTip": "Application\\UseCases\\Admin\\Config\\GetConfigHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:51:15.386Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "GetConfigModels.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Admin\\Config\\GetConfigModels.cs",
+              "RelativeDocumentMoniker": "Application\\UseCases\\Admin\\Config\\GetConfigModels.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Admin\\Config\\GetConfigModels.cs",
+              "RelativeToolTip": "Application\\UseCases\\Admin\\Config\\GetConfigModels.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:51:05.191Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "ReleasePunishmentHandler.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Admin\\Punishments\\ReleasePunishmentHandler.cs",
+              "RelativeDocumentMoniker": "Application\\UseCases\\Admin\\Punishments\\ReleasePunishmentHandler.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Admin\\Punishments\\ReleasePunishmentHandler.cs",
+              "RelativeToolTip": "Application\\UseCases\\Admin\\Punishments\\ReleasePunishmentHandler.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAQwFsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:50:45.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "ReleasePunishmentModels.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Admin\\Punishments\\ReleasePunishmentModels.cs",
+              "RelativeDocumentMoniker": "Application\\UseCases\\Admin\\Punishments\\ReleasePunishmentModels.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Admin\\Punishments\\ReleasePunishmentModels.cs",
+              "RelativeToolTip": "Application\\UseCases\\Admin\\Punishments\\ReleasePunishmentModels.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:50:36.546Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "ReadModelsQueries.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Persistence\\Repositories\\ReadModelsQueries.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Persistence\\Repositories\\ReadModelsQueries.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Persistence\\Repositories\\ReadModelsQueries.cs",
+              "RelativeToolTip": "Infrastructure\\Persistence\\Repositories\\ReadModelsQueries.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAQwE0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:41:06.81Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "ManualBanHandler.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Admin\\Punishments\\ManualBanHandler.cs",
+              "RelativeDocumentMoniker": "Application\\UseCases\\Admin\\Punishments\\ManualBanHandler.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Admin\\Punishments\\ManualBanHandler.cs",
+              "RelativeToolTip": "Application\\UseCases\\Admin\\Punishments\\ManualBanHandler.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAmwCQAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:50:09.149Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "ManualBanModels.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Admin\\Punishments\\ManualBanModels.cs",
+              "RelativeDocumentMoniker": "Application\\UseCases\\Admin\\Punishments\\ManualBanModels.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Admin\\Punishments\\ManualBanModels.cs",
+              "RelativeToolTip": "Application\\UseCases\\Admin\\Punishments\\ManualBanModels.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:50:04.087Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "AdjustTicketsHandler.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Admin\\Tickets\\AdjustTicketsHandler.cs",
+              "RelativeDocumentMoniker": "Application\\UseCases\\Admin\\Tickets\\AdjustTicketsHandler.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Admin\\Tickets\\AdjustTicketsHandler.cs",
+              "RelativeToolTip": "Application\\UseCases\\Admin\\Tickets\\AdjustTicketsHandler.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAQwE4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:49:37.389Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "AdjustTicketsModels.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Admin\\Tickets\\AdjustTicketsModels.cs",
+              "RelativeDocumentMoniker": "Application\\UseCases\\Admin\\Tickets\\AdjustTicketsModels.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Admin\\Tickets\\AdjustTicketsModels.cs",
+              "RelativeToolTip": "Application\\UseCases\\Admin\\Tickets\\AdjustTicketsModels.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:49:23.443Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "ListUsersHandler.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Admin\\Users\\ListUsersHandler.cs",
+              "RelativeDocumentMoniker": "Application\\UseCases\\Admin\\Users\\ListUsersHandler.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Admin\\Users\\ListUsersHandler.cs",
+              "RelativeToolTip": "Application\\UseCases\\Admin\\Users\\ListUsersHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:49:02.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "ListUsersModels.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Admin\\Users\\ListUsersModels.cs",
+              "RelativeDocumentMoniker": "Application\\UseCases\\Admin\\Users\\ListUsersModels.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Admin\\Users\\ListUsersModels.cs",
+              "RelativeToolTip": "Application\\UseCases\\Admin\\Users\\ListUsersModels.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:48:50.436Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "MarkJobFailedHandler.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Bot\\Jobs\\MarkJobFailedHandler.cs",
+              "RelativeDocumentMoniker": "Application\\UseCases\\Bot\\Jobs\\MarkJobFailedHandler.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Bot\\Jobs\\MarkJobFailedHandler.cs",
+              "RelativeToolTip": "Application\\UseCases\\Bot\\Jobs\\MarkJobFailedHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:48:10.755Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "MarkJobFailedModels.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Bot\\Jobs\\MarkJobFailedModels.cs",
+              "RelativeDocumentMoniker": "Application\\UseCases\\Bot\\Jobs\\MarkJobFailedModels.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Bot\\Jobs\\MarkJobFailedModels.cs",
+              "RelativeToolTip": "Application\\UseCases\\Bot\\Jobs\\MarkJobFailedModels.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:48:02.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "MarkJobDoneHandler.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Bot\\Jobs\\MarkJobDoneHandler.cs",
+              "RelativeDocumentMoniker": "Application\\UseCases\\Bot\\Jobs\\MarkJobDoneHandler.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Bot\\Jobs\\MarkJobDoneHandler.cs",
+              "RelativeToolTip": "Application\\UseCases\\Bot\\Jobs\\MarkJobDoneHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:47:52.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "MarkJobDoneModels.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Bot\\Jobs\\MarkJobDoneModels.cs",
+              "RelativeDocumentMoniker": "Application\\UseCases\\Bot\\Jobs\\MarkJobDoneModels.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Bot\\Jobs\\MarkJobDoneModels.cs",
+              "RelativeToolTip": "Application\\UseCases\\Bot\\Jobs\\MarkJobDoneModels.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:47:44.343Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "PollJobsHandler.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Bot\\Jobs\\PollJobsHandler.cs",
+              "RelativeDocumentMoniker": "Application\\UseCases\\Bot\\Jobs\\PollJobsHandler.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Bot\\Jobs\\PollJobsHandler.cs",
+              "RelativeToolTip": "Application\\UseCases\\Bot\\Jobs\\PollJobsHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAQwC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:47:32.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "PollJobsModels.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Bot\\Jobs\\PollJobsModels.cs",
+              "RelativeDocumentMoniker": "Application\\UseCases\\Bot\\Jobs\\PollJobsModels.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Bot\\Jobs\\PollJobsModels.cs",
+              "RelativeToolTip": "Application\\UseCases\\Bot\\Jobs\\PollJobsModels.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:47:21.396Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "SelfUnbanHandler.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Bot\\Punishments\\SelfUnbanHandler.cs",
+              "RelativeDocumentMoniker": "Application\\UseCases\\Bot\\Punishments\\SelfUnbanHandler.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Bot\\Punishments\\SelfUnbanHandler.cs",
+              "RelativeToolTip": "Application\\UseCases\\Bot\\Punishments\\SelfUnbanHandler.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAQwGoAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:46:49.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "SelfUnbanModels.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Bot\\Punishments\\SelfUnbanModels.cs",
+              "RelativeDocumentMoniker": "Application\\UseCases\\Bot\\Punishments\\SelfUnbanModels.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Bot\\Punishments\\SelfUnbanModels.cs",
+              "RelativeToolTip": "Application\\UseCases\\Bot\\Punishments\\SelfUnbanModels.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:46:41.431Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "TransferTicketsHandler.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Bot\\Tickets\\TransferTicketsHandler.cs",
+              "RelativeDocumentMoniker": "Application\\UseCases\\Bot\\Tickets\\TransferTicketsHandler.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Bot\\Tickets\\TransferTicketsHandler.cs",
+              "RelativeToolTip": "Application\\UseCases\\Bot\\Tickets\\TransferTicketsHandler.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAQwFUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:46:18.329Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "TransferTicketsModels.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Bot\\Tickets\\TransferTicketsModels.cs",
+              "RelativeDocumentMoniker": "Application\\UseCases\\Bot\\Tickets\\TransferTicketsModels.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Bot\\Tickets\\TransferTicketsModels.cs",
+              "RelativeToolTip": "Application\\UseCases\\Bot\\Tickets\\TransferTicketsModels.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:46:08.123Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "GetMeHandler.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Bot\\Me\\GetMeHandler.cs",
+              "RelativeDocumentMoniker": "Application\\UseCases\\Bot\\Me\\GetMeHandler.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Bot\\Me\\GetMeHandler.cs",
+              "RelativeToolTip": "Application\\UseCases\\Bot\\Me\\GetMeHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:45:48.309Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "GetMeModels.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Bot\\Me\\GetMeModels.cs",
+              "RelativeDocumentMoniker": "Application\\UseCases\\Bot\\Me\\GetMeModels.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Bot\\Me\\GetMeModels.cs",
+              "RelativeToolTip": "Application\\UseCases\\Bot\\Me\\GetMeModels.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:45:38.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "SyncEligibleUsersHandler.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Bot\\Eligible\\SyncEligibleUsersHandler.cs",
+              "RelativeDocumentMoniker": "Application\\UseCases\\Bot\\Eligible\\SyncEligibleUsersHandler.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Bot\\Eligible\\SyncEligibleUsersHandler.cs",
+              "RelativeToolTip": "Application\\UseCases\\Bot\\Eligible\\SyncEligibleUsersHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:45:17.5Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "SyncEligibleUsersModels.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Bot\\Eligible\\SyncEligibleUsersModels.cs",
+              "RelativeDocumentMoniker": "Application\\UseCases\\Bot\\Eligible\\SyncEligibleUsersModels.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Bot\\Eligible\\SyncEligibleUsersModels.cs",
+              "RelativeToolTip": "Application\\UseCases\\Bot\\Eligible\\SyncEligibleUsersModels.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:45:10.014Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "UpsertUserHandler.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Bot\\Users\\UpsertUserHandler.cs",
+              "RelativeDocumentMoniker": "Application\\UseCases\\Bot\\Users\\UpsertUserHandler.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Bot\\Users\\UpsertUserHandler.cs",
+              "RelativeToolTip": "Application\\UseCases\\Bot\\Users\\UpsertUserHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:44:35.972Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "UpsertUserModels.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Bot\\Users\\UpsertUserModels.cs",
+              "RelativeDocumentMoniker": "Application\\UseCases\\Bot\\Users\\UpsertUserModels.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Bot\\Users\\UpsertUserModels.cs",
+              "RelativeToolTip": "Application\\UseCases\\Bot\\Users\\UpsertUserModels.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:44:27.058Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "CreateBotJobHandler.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Internal\\CreateBotJob\\CreateBotJobHandler.cs",
+              "RelativeDocumentMoniker": "Application\\UseCases\\Internal\\CreateBotJob\\CreateBotJobHandler.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Internal\\CreateBotJob\\CreateBotJobHandler.cs",
+              "RelativeToolTip": "Application\\UseCases\\Internal\\CreateBotJob\\CreateBotJobHandler.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwEIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:43:42.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "CreateBotJobModels.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Internal\\CreateBotJob\\CreateBotJobModels.cs",
+              "RelativeDocumentMoniker": "Application\\UseCases\\Internal\\CreateBotJob\\CreateBotJobModels.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\UseCases\\Internal\\CreateBotJob\\CreateBotJobModels.cs",
+              "RelativeToolTip": "Application\\UseCases\\Internal\\CreateBotJob\\CreateBotJobModels.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:43:29.201Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "SystemAccounts.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\Services\\Tickets\\SystemAccounts.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\Tickets\\SystemAccounts.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\Services\\Tickets\\SystemAccounts.cs",
+              "RelativeToolTip": "Application\\Services\\Tickets\\SystemAccounts.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:42:51.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "Ensure.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\Services\\Validation\\Ensure.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\Validation\\Ensure.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\Services\\Validation\\Ensure.cs",
+              "RelativeToolTip": "Application\\Services\\Validation\\Ensure.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:42:22.519Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
+              "Title": "ErrorCodes.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\Services\\Errors\\ErrorCodes.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\Errors\\ErrorCodes.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\Services\\Errors\\ErrorCodes.cs",
+              "RelativeToolTip": "Application\\Services\\Errors\\ErrorCodes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:42:05.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 77,
+              "Title": "IReadModelsQueries.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\Abstractions\\Persistence\\IReadModelsQueries.cs",
+              "RelativeDocumentMoniker": "Application\\Abstractions\\Persistence\\IReadModelsQueries.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\Abstractions\\Persistence\\IReadModelsQueries.cs",
+              "RelativeToolTip": "Application\\Abstractions\\Persistence\\IReadModelsQueries.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:40:36.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 79,
+              "Title": "BotJobRepository.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Persistence\\Repositories\\BotJobRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Persistence\\Repositories\\BotJobRepository.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Persistence\\Repositories\\BotJobRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Persistence\\Repositories\\BotJobRepository.cs",
+              "ViewState": "AgIAAJcAAAAAAAAAAAAQwMYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:20:29.926Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 82,
+              "Title": "RouletteRoundRepository.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Persistence\\Repositories\\RouletteRoundRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Persistence\\Repositories\\RouletteRoundRepository.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Persistence\\Repositories\\RouletteRoundRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Persistence\\Repositories\\RouletteRoundRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:20:22.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 83,
+              "Title": "EligibleUsersRepository.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Persistence\\Repositories\\EligibleUsersRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Persistence\\Repositories\\EligibleUsersRepository.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Persistence\\Repositories\\EligibleUsersRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Persistence\\Repositories\\EligibleUsersRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAswD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:20:14.189Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 80,
+              "Title": "ConfigRepository.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Persistence\\Repositories\\ConfigRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Persistence\\Repositories\\ConfigRepository.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Persistence\\Repositories\\ConfigRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Persistence\\Repositories\\ConfigRepository.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAwHEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:19:39.676Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 84,
+              "Title": "PunishmentHistoryRepository.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Persistence\\Repositories\\PunishmentHistoryRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Persistence\\Repositories\\PunishmentHistoryRepository.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Persistence\\Repositories\\PunishmentHistoryRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Persistence\\Repositories\\PunishmentHistoryRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:19:30.729Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 85,
+              "Title": "TicketTransferRepository.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Persistence\\Repositories\\TicketTransferRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Persistence\\Repositories\\TicketTransferRepository.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Persistence\\Repositories\\TicketTransferRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Persistence\\Repositories\\TicketTransferRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:19:21.74Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 78,
+              "Title": "PunishmentRepository.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Persistence\\Repositories\\PunishmentRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Persistence\\Repositories\\PunishmentRepository.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Persistence\\Repositories\\PunishmentRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Persistence\\Repositories\\PunishmentRepository.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAQwEsAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:19:10.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 86,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Persistence\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Persistence\\Repositories\\UserRepository.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Persistence\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Persistence\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAswGwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:18:55.349Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 87,
+              "Title": "DbCommandExtensions.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Persistence\\Repositories\\DbCommandExtensions.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Persistence\\Repositories\\DbCommandExtensions.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Persistence\\Repositories\\DbCommandExtensions.cs",
+              "RelativeToolTip": "Infrastructure\\Persistence\\Repositories\\DbCommandExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:18:46.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 81,
+              "Title": "EntityMappers.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Mapping\\EntityMappers.cs",
+              "RelativeDocumentMoniker": "Mapping\\EntityMappers.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Mapping\\EntityMappers.cs",
+              "RelativeToolTip": "Mapping\\EntityMappers.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAADwvwsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:18:05.167Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 88,
+              "Title": "CryptoRandomProvider.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Random\\CryptoRandomProvider.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Random\\CryptoRandomProvider.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Random\\CryptoRandomProvider.cs",
+              "RelativeToolTip": "Infrastructure\\Random\\CryptoRandomProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:17:53.97Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 89,
+              "Title": "SystemTimeProvider.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Time\\SystemTimeProvider.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Time\\SystemTimeProvider.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Time\\SystemTimeProvider.cs",
+              "RelativeToolTip": "Infrastructure\\Time\\SystemTimeProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:17:42.991Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 90,
+              "Title": "EfUnitOfWork.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Transactions\\EfUnitOfWork.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Transactions\\EfUnitOfWork.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Transactions\\EfUnitOfWork.cs",
+              "RelativeToolTip": "Infrastructure\\Transactions\\EfUnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:17:29.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 91,
+              "Title": "EfAppTransaction.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Transactions\\EfAppTransaction.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Transactions\\EfAppTransaction.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Transactions\\EfAppTransaction.cs",
+              "RelativeToolTip": "Infrastructure\\Transactions\\EfAppTransaction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:17:21.18Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 93,
+              "Title": "AppException.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\Services\\Errors\\AppException.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\Errors\\AppException.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\Services\\Errors\\AppException.cs",
+              "RelativeToolTip": "Application\\Services\\Errors\\AppException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:12:43.02Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 94,
+              "Title": "AppError.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\Services\\Errors\\AppError.cs",
+              "RelativeDocumentMoniker": "Application\\Services\\Errors\\AppError.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\Services\\Errors\\AppError.cs",
+              "RelativeToolTip": "Application\\Services\\Errors\\AppError.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:12:14.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 95,
+              "Title": "IBotJobRepository.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\Abstractions\\Persistence\\IBotJobRepository.cs",
+              "RelativeDocumentMoniker": "Application\\Abstractions\\Persistence\\IBotJobRepository.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\Abstractions\\Persistence\\IBotJobRepository.cs",
+              "RelativeToolTip": "Application\\Abstractions\\Persistence\\IBotJobRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:11:48.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 96,
+              "Title": "IRouletteRoundRepository.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\Abstractions\\Persistence\\IRouletteRoundRepository.cs",
+              "RelativeDocumentMoniker": "Application\\Abstractions\\Persistence\\IRouletteRoundRepository.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\Abstractions\\Persistence\\IRouletteRoundRepository.cs",
+              "RelativeToolTip": "Application\\Abstractions\\Persistence\\IRouletteRoundRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:11:40.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 97,
+              "Title": "IEligibleUsersRepository.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\Abstractions\\Persistence\\IEligibleUsersRepository.cs",
+              "RelativeDocumentMoniker": "Application\\Abstractions\\Persistence\\IEligibleUsersRepository.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\Abstractions\\Persistence\\IEligibleUsersRepository.cs",
+              "RelativeToolTip": "Application\\Abstractions\\Persistence\\IEligibleUsersRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:11:32.785Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 98,
+              "Title": "IConfigRepository.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\Abstractions\\Persistence\\IConfigRepository.cs",
+              "RelativeDocumentMoniker": "Application\\Abstractions\\Persistence\\IConfigRepository.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\Abstractions\\Persistence\\IConfigRepository.cs",
+              "RelativeToolTip": "Application\\Abstractions\\Persistence\\IConfigRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:11:23.871Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 99,
+              "Title": "IPunishmentHistoryRepository.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\Abstractions\\Persistence\\IPunishmentHistoryRepository.cs",
+              "RelativeDocumentMoniker": "Application\\Abstractions\\Persistence\\IPunishmentHistoryRepository.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\Abstractions\\Persistence\\IPunishmentHistoryRepository.cs",
+              "RelativeToolTip": "Application\\Abstractions\\Persistence\\IPunishmentHistoryRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:11:16.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 100,
+              "Title": "ITicketTransferRepository.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\Abstractions\\Persistence\\ITicketTransferRepository.cs",
+              "RelativeDocumentMoniker": "Application\\Abstractions\\Persistence\\ITicketTransferRepository.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\Abstractions\\Persistence\\ITicketTransferRepository.cs",
+              "RelativeToolTip": "Application\\Abstractions\\Persistence\\ITicketTransferRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:11:09.913Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 101,
+              "Title": "IPunishmentRepository.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\Abstractions\\Persistence\\IPunishmentRepository.cs",
+              "RelativeDocumentMoniker": "Application\\Abstractions\\Persistence\\IPunishmentRepository.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\Abstractions\\Persistence\\IPunishmentRepository.cs",
+              "RelativeToolTip": "Application\\Abstractions\\Persistence\\IPunishmentRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:10:49.882Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 92,
+              "Title": "BannedServiceDbContext.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Persistence\\BannedServiceDbContext.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Persistence\\BannedServiceDbContext.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Persistence\\BannedServiceDbContext.cs",
+              "RelativeToolTip": "Infrastructure\\Persistence\\BannedServiceDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAUAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T12:55:02.81Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 102,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\Abstractions\\Persistence\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "Application\\Abstractions\\Persistence\\IUserRepository.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\Abstractions\\Persistence\\IUserRepository.cs",
+              "RelativeToolTip": "Application\\Abstractions\\Persistence\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:10:41.625Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 103,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\Abstractions\\Transactions\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "Application\\Abstractions\\Transactions\\IUnitOfWork.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\Abstractions\\Transactions\\IUnitOfWork.cs",
+              "RelativeToolTip": "Application\\Abstractions\\Transactions\\IUnitOfWork.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:10:25.202Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 104,
+              "Title": "IAppTransaction.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\Abstractions\\Transactions\\IAppTransaction.cs",
+              "RelativeDocumentMoniker": "Application\\Abstractions\\Transactions\\IAppTransaction.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\Abstractions\\Transactions\\IAppTransaction.cs",
+              "RelativeToolTip": "Application\\Abstractions\\Transactions\\IAppTransaction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:10:17.46Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 105,
+              "Title": "IRandomProvider.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\Abstractions\\Random\\IRandomProvider.cs",
+              "RelativeDocumentMoniker": "Application\\Abstractions\\Random\\IRandomProvider.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\Abstractions\\Random\\IRandomProvider.cs",
+              "RelativeToolTip": "Application\\Abstractions\\Random\\IRandomProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:10:01.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 106,
+              "Title": "ITimeProvider.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\Abstractions\\Time\\ITimeProvider.cs",
+              "RelativeDocumentMoniker": "Application\\Abstractions\\Time\\ITimeProvider.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Application\\Abstractions\\Time\\ITimeProvider.cs",
+              "RelativeToolTip": "Application\\Abstractions\\Time\\ITimeProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:09:51.497Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 107,
+              "Title": "BotJob.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Domain\\BotJobs\\BotJob.cs",
+              "RelativeDocumentMoniker": "Domain\\BotJobs\\BotJob.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Domain\\BotJobs\\BotJob.cs",
+              "RelativeToolTip": "Domain\\BotJobs\\BotJob.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAA7wFQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:09:26.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 108,
+              "Title": "BotJobStatus.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Domain\\BotJobs\\BotJobStatus.cs",
+              "RelativeDocumentMoniker": "Domain\\BotJobs\\BotJobStatus.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Domain\\BotJobs\\BotJobStatus.cs",
+              "RelativeToolTip": "Domain\\BotJobs\\BotJobStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:09:18.648Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 109,
+              "Title": "BotJobType.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Domain\\BotJobs\\BotJobType.cs",
+              "RelativeDocumentMoniker": "Domain\\BotJobs\\BotJobType.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Domain\\BotJobs\\BotJobType.cs",
+              "RelativeToolTip": "Domain\\BotJobs\\BotJobType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:09:11.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 110,
+              "Title": "RouletteRound.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Domain\\Rounds\\RouletteRound.cs",
+              "RelativeDocumentMoniker": "Domain\\Rounds\\RouletteRound.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Domain\\Rounds\\RouletteRound.cs",
+              "RelativeToolTip": "Domain\\Rounds\\RouletteRound.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:09:01.491Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 111,
+              "Title": "RouletteRoundType.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Domain\\Rounds\\RouletteRoundType.cs",
+              "RelativeDocumentMoniker": "Domain\\Rounds\\RouletteRoundType.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Domain\\Rounds\\RouletteRoundType.cs",
+              "RelativeToolTip": "Domain\\Rounds\\RouletteRoundType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:08:52.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 112,
+              "Title": "EligibleUserSnapshot.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Domain\\Users\\EligibleUserSnapshot.cs",
+              "RelativeDocumentMoniker": "Domain\\Users\\EligibleUserSnapshot.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Domain\\Users\\EligibleUserSnapshot.cs",
+              "RelativeToolTip": "Domain\\Users\\EligibleUserSnapshot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:08:36.1Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 113,
+              "Title": "Config.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Domain\\Rounds\\Config.cs",
+              "RelativeDocumentMoniker": "Domain\\Rounds\\Config.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Domain\\Rounds\\Config.cs",
+              "RelativeToolTip": "Domain\\Rounds\\Config.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAxwEUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:08:24.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 114,
+              "Title": "PunishmentHistoryRecord.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Domain\\Punishments\\PunishmentHistoryRecord.cs",
+              "RelativeDocumentMoniker": "Domain\\Punishments\\PunishmentHistoryRecord.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Domain\\Punishments\\PunishmentHistoryRecord.cs",
+              "RelativeToolTip": "Domain\\Punishments\\PunishmentHistoryRecord.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:08:11.435Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 115,
+              "Title": "PunishmentHistoryEventType.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Domain\\Punishments\\PunishmentHistoryEventType.cs",
+              "RelativeDocumentMoniker": "Domain\\Punishments\\PunishmentHistoryEventType.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Domain\\Punishments\\PunishmentHistoryEventType.cs",
+              "RelativeToolTip": "Domain\\Punishments\\PunishmentHistoryEventType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:08:03.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 116,
+              "Title": "TicketTransfer.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Domain\\Tickets\\TicketTransfer.cs",
+              "RelativeDocumentMoniker": "Domain\\Tickets\\TicketTransfer.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Domain\\Tickets\\TicketTransfer.cs",
+              "RelativeToolTip": "Domain\\Tickets\\TicketTransfer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:07:49.785Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 117,
+              "Title": "TicketTransferReason.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Domain\\Tickets\\TicketTransferReason.cs",
+              "RelativeDocumentMoniker": "Domain\\Tickets\\TicketTransferReason.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Domain\\Tickets\\TicketTransferReason.cs",
+              "RelativeToolTip": "Domain\\Tickets\\TicketTransferReason.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:07:41.734Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 118,
+              "Title": "Punishment.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Domain\\Punishments\\Punishment.cs",
+              "RelativeDocumentMoniker": "Domain\\Punishments\\Punishment.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Domain\\Punishments\\Punishment.cs",
+              "RelativeToolTip": "Domain\\Punishments\\Punishment.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAswGMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:07:29.139Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 119,
+              "Title": "PunishmentStatus.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Domain\\Punishments\\PunishmentStatus.cs",
+              "RelativeDocumentMoniker": "Domain\\Punishments\\PunishmentStatus.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Domain\\Punishments\\PunishmentStatus.cs",
+              "RelativeToolTip": "Domain\\Punishments\\PunishmentStatus.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:07:19.303Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 120,
+              "Title": "User.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Domain\\Users\\User.cs",
+              "RelativeDocumentMoniker": "Domain\\Users\\User.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Domain\\Users\\User.cs",
+              "RelativeToolTip": "Domain\\Users\\User.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAmwDYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:07:09.567Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 121,
+              "Title": "Guard.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Domain\\Shared\\Guard.cs",
+              "RelativeDocumentMoniker": "Domain\\Shared\\Guard.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Domain\\Shared\\Guard.cs",
+              "RelativeToolTip": "Domain\\Shared\\Guard.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:06:55.733Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 122,
+              "Title": "DomainException.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Domain\\Shared\\DomainException.cs",
+              "RelativeDocumentMoniker": "Domain\\Shared\\DomainException.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Domain\\Shared\\DomainException.cs",
+              "RelativeToolTip": "Domain\\Shared\\DomainException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:06:48.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 123,
+              "Title": "BannedServiceDbContextModelSnapshot.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Persistence\\Migrations\\BannedServiceDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Persistence\\Migrations\\BannedServiceDbContextModelSnapshot.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Persistence\\Migrations\\BannedServiceDbContextModelSnapshot.cs",
+              "RelativeToolTip": "Infrastructure\\Persistence\\Migrations\\BannedServiceDbContextModelSnapshot.cs",
+              "ViewState": "AgIAABIBAAAAAAAAAAAswNcBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:04:05.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 124,
+              "Title": "20260106000100_InitialCreate.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Persistence\\Migrations\\20260106000100_InitialCreate.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Persistence\\Migrations\\20260106000100_InitialCreate.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Persistence\\Migrations\\20260106000100_InitialCreate.cs",
+              "RelativeToolTip": "Infrastructure\\Persistence\\Migrations\\20260106000100_InitialCreate.cs",
+              "ViewState": "AgIAAMkAAAAAAAAAAAAswAMBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:03:49.464Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 125,
+              "Title": "BotJobEntityConfiguration.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Persistence\\Configurations\\BotJobEntityConfiguration.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Persistence\\Configurations\\BotJobEntityConfiguration.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Persistence\\Configurations\\BotJobEntityConfiguration.cs",
+              "RelativeToolTip": "Infrastructure\\Persistence\\Configurations\\BotJobEntityConfiguration.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAswGAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:03:27.222Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 126,
+              "Title": "RouletteRoundEntityConfiguration.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Persistence\\Configurations\\RouletteRoundEntityConfiguration.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Persistence\\Configurations\\RouletteRoundEntityConfiguration.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Persistence\\Configurations\\RouletteRoundEntityConfiguration.cs",
+              "RelativeToolTip": "Infrastructure\\Persistence\\Configurations\\RouletteRoundEntityConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:03:17.462Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 127,
+              "Title": "EligibleUserEntityConfiguration.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Persistence\\Configurations\\EligibleUserEntityConfiguration.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Persistence\\Configurations\\EligibleUserEntityConfiguration.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Persistence\\Configurations\\EligibleUserEntityConfiguration.cs",
+              "RelativeToolTip": "Infrastructure\\Persistence\\Configurations\\EligibleUserEntityConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:03:09.18Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 128,
+              "Title": "ConfigEntityConfiguration.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Persistence\\Configurations\\ConfigEntityConfiguration.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Persistence\\Configurations\\ConfigEntityConfiguration.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Persistence\\Configurations\\ConfigEntityConfiguration.cs",
+              "RelativeToolTip": "Infrastructure\\Persistence\\Configurations\\ConfigEntityConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:03:00.882Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 129,
+              "Title": "PunishmentHistoryEntityConfiguration.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Persistence\\Configurations\\PunishmentHistoryEntityConfiguration.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Persistence\\Configurations\\PunishmentHistoryEntityConfiguration.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Persistence\\Configurations\\PunishmentHistoryEntityConfiguration.cs",
+              "RelativeToolTip": "Infrastructure\\Persistence\\Configurations\\PunishmentHistoryEntityConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:02:52.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 130,
+              "Title": "TicketTransferEntityConfiguration.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Persistence\\Configurations\\TicketTransferEntityConfiguration.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Persistence\\Configurations\\TicketTransferEntityConfiguration.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Persistence\\Configurations\\TicketTransferEntityConfiguration.cs",
+              "RelativeToolTip": "Infrastructure\\Persistence\\Configurations\\TicketTransferEntityConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:02:43.819Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 131,
+              "Title": "PunishmentEntityConfiguration.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Persistence\\Configurations\\PunishmentEntityConfiguration.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Persistence\\Configurations\\PunishmentEntityConfiguration.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Persistence\\Configurations\\PunishmentEntityConfiguration.cs",
+              "RelativeToolTip": "Infrastructure\\Persistence\\Configurations\\PunishmentEntityConfiguration.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAswFQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:02:32.898Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 132,
+              "Title": "UserEntityConfiguration.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Persistence\\Configurations\\UserEntityConfiguration.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Persistence\\Configurations\\UserEntityConfiguration.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Persistence\\Configurations\\UserEntityConfiguration.cs",
+              "RelativeToolTip": "Infrastructure\\Persistence\\Configurations\\UserEntityConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:02:14.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 133,
+              "Title": "BotJobEntity.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Persistence\\Entities\\BotJobEntity.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Persistence\\Entities\\BotJobEntity.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Persistence\\Entities\\BotJobEntity.cs",
+              "RelativeToolTip": "Infrastructure\\Persistence\\Entities\\BotJobEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:01:59.031Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 134,
+              "Title": "RouletteRoundEntity.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Persistence\\Entities\\RouletteRoundEntity.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Persistence\\Entities\\RouletteRoundEntity.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Persistence\\Entities\\RouletteRoundEntity.cs",
+              "RelativeToolTip": "Infrastructure\\Persistence\\Entities\\RouletteRoundEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:01:52.029Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 135,
+              "Title": "EligibleUserEntity.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Persistence\\Entities\\EligibleUserEntity.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Persistence\\Entities\\EligibleUserEntity.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Persistence\\Entities\\EligibleUserEntity.cs",
+              "RelativeToolTip": "Infrastructure\\Persistence\\Entities\\EligibleUserEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:01:44.455Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 136,
+              "Title": "ConfigEntity.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Persistence\\Entities\\ConfigEntity.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Persistence\\Entities\\ConfigEntity.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Persistence\\Entities\\ConfigEntity.cs",
+              "RelativeToolTip": "Infrastructure\\Persistence\\Entities\\ConfigEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:01:32.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 137,
+              "Title": "PunishmentHistoryEntity.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Persistence\\Entities\\PunishmentHistoryEntity.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Persistence\\Entities\\PunishmentHistoryEntity.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Persistence\\Entities\\PunishmentHistoryEntity.cs",
+              "RelativeToolTip": "Infrastructure\\Persistence\\Entities\\PunishmentHistoryEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:01:23.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 138,
+              "Title": "TicketTransferEntity.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Persistence\\Entities\\TicketTransferEntity.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Persistence\\Entities\\TicketTransferEntity.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Persistence\\Entities\\TicketTransferEntity.cs",
+              "RelativeToolTip": "Infrastructure\\Persistence\\Entities\\TicketTransferEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:01:10.837Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 139,
+              "Title": "PunishmentEntity.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Persistence\\Entities\\PunishmentEntity.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Persistence\\Entities\\PunishmentEntity.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Persistence\\Entities\\PunishmentEntity.cs",
+              "RelativeToolTip": "Infrastructure\\Persistence\\Entities\\PunishmentEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:01:01.222Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 140,
+              "Title": "UserEntity.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Persistence\\Entities\\UserEntity.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Persistence\\Entities\\UserEntity.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Persistence\\Entities\\UserEntity.cs",
+              "RelativeToolTip": "Infrastructure\\Persistence\\Entities\\UserEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:00:51.991Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 141,
+              "Title": "Enums.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Persistence\\Entities\\Enums.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Persistence\\Entities\\Enums.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Persistence\\Entities\\Enums.cs",
+              "RelativeToolTip": "Infrastructure\\Persistence\\Entities\\Enums.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T13:00:35.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 142,
+              "Title": "DesignTimeDbContextFactory.cs",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Persistence\\DesignTimeDbContextFactory.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Persistence\\DesignTimeDbContextFactory.cs",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Infrastructure\\Persistence\\DesignTimeDbContextFactory.cs",
+              "RelativeToolTip": "Infrastructure\\Persistence\\DesignTimeDbContextFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-06T12:55:18.551Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 145,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Dockerfile",
+              "RelativeDocumentMoniker": "Dockerfile",
+              "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\Dockerfile",
+              "RelativeToolTip": "Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-01-06T12:38:18.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 144,
               "Title": "appsettings.json",
               "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
               "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-01-05T12:05:08.53Z"
+              "WhenOpened": "2026-01-05T12:05:08.53Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 143,
               "Title": "BackendDSBot.csproj",
               "DocumentMoniker": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\BackendDSBot.csproj",
               "RelativeDocumentMoniker": "BackendDSBot.csproj",
               "ToolTip": "G:\\Project\\DiscordBotRulleteBan\\BackendDSBot\\BackendDSBot.csproj",
               "RelativeToolTip": "BackendDSBot.csproj",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAcwEEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-01-05T05:31:42.948Z"
+              "WhenOpened": "2026-01-05T05:31:42.948Z",
+              "EditorCaption": ""
             }
           ]
         }

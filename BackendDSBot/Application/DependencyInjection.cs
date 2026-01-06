@@ -44,6 +44,9 @@ public static class DependencyInjection
         services.AddScoped<RunBanRouletteHandler>();
         services.AddScoped<RunTicketRouletteHandler>();
 
+        // Workers
+        services.AddHostedService<Application.BackgroundJobs.ExpirePunishmentsWorker>();
+        services.AddHostedService<Application.BackgroundJobs.RouletteWorker>();
         return services;
     }
 }

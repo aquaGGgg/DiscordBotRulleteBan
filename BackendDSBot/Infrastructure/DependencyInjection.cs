@@ -2,7 +2,6 @@
 using Application.Abstractions.Random;
 using Application.Abstractions.Time;
 using Application.Abstractions.Transactions;
-using Infrastructure.Persistence;
 using Infrastructure.Persistence.Repositories;
 using Infrastructure.Random;
 using Infrastructure.Time;
@@ -15,13 +14,6 @@ public static class DependencyInjection
 {
     public static IServiceCollection AddInfrastructure(this IServiceCollection services)
     {
-        // Providers
-        services.AddSingleton<ITimeProvider, SystemTimeProvider>();
-        services.AddSingleton<IRandomProvider, CryptoRandomProvider>();
-
-        // Unit of work (DbContext scoped)
-        services.AddScoped<IUnitOfWork, EfUnitOfWork>();
-
         // Repositories
         services.AddScoped<IUserRepository, UserRepository>();
         services.AddScoped<IPunishmentRepository, PunishmentRepository>();
@@ -31,6 +23,16 @@ public static class DependencyInjection
         services.AddScoped<IEligibleUsersRepository, EligibleUsersRepository>();
         services.AddScoped<IRouletteRoundRepository, RouletteRoundRepository>();
         services.AddScoped<IBotJobRepository, BotJobRepository>();
+
+        // Read-model queries
+        services.AddScoped<IReadModelsQueries, ReadModelsQueries>();
+
+        // UnitOfWork / Transactions
+        services.AddScoped<IUnitOfWork, EfUnitOfWork>();
+
+        // Providers
+        services.AddSingleton<ITimeProvider, SystemTimeProvider>();
+        services.AddSingleton<IRandomProvider, SystemRandomProvider>();
 
         return services;
     }
