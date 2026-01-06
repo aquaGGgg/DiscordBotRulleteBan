@@ -1,64 +1,96 @@
+using Application;
+using Infrastructure;
 using Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
+using Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Logs
-builder.Logging.ClearProviders();
-builder.Logging.AddConsole();
-
-// Controllers
-builder.Services
-    .AddControllers()
-    .ConfigureApiBehaviorOptions(o =>
-    {
-        // Без "магического" автоматического 400 — дальше будем валидировать явно (шаги 5-6)
-        o.SuppressModelStateInvalidFilter = true;
-    });
-
-// ProblemDetails (единый формат ошибок)
-builder.Services.AddProblemDetails();
-
-// Swagger (удобно в dev)
+// --------------------
+// Controllers + Swagger
+// --------------------
+builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(o =>
+{
+    o.SwaggerDoc("v1", new() { Title = "BannedService API", Version = "v1" });
+});
 
-// DbContext
-var connStr = builder.Configuration.GetConnectionString("Default")
-             ?? throw new InvalidOperationException("Missing connection string: ConnectionStrings:Default");
+// --------------------
+// CORS (AdminPanel dev)
+// --------------------
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("DevCors", p =>
+    {
+        p.WithOrigins(
+                "http://localhost:5173",
+                "http://127.0.0.1:5173"
+            )
+            .AllowAnyHeader()
+            .AllowAnyMethod();
+    });
+});
+
+// --------------------
+// DbContext (PostgreSQL)
+// --------------------
+var cs = builder.Configuration.GetConnectionString("Default");
+if (string.IsNullOrWhiteSpace(cs))
+    throw new InvalidOperationException("ConnectionStrings:Default is not configured.");
 
 builder.Services.AddDbContext<BannedServiceDbContext>(opt =>
 {
-    opt.UseNpgsql(connStr, npgsql =>
+    opt.UseNpgsql(cs, npg =>
     {
-        // Миграции будут в сборке Infrastructure (в нашем случае — в этой же сборке BackendDSBot)
-        npgsql.MigrationsAssembly(typeof(BannedServiceDbContext).Assembly.FullName);
+        // Миграции в указанной сборке (у тебя Migrations в Infrastructure/Persistence/Migrations)
+        npg.MigrationsAssembly(typeof(BannedServiceDbContext).Assembly.FullName);
     });
 
-    opt.EnableDetailedErrors();
+    // В проде лучше выключить, но в dev полезно
+    opt.EnableDetailedErrors(builder.Environment.IsDevelopment());
+    opt.EnableSensitiveDataLogging(builder.Environment.IsDevelopment());
 });
 
-// HealthChecks (минимально)
-builder.Services.AddHealthChecks()
-    .AddDbContextCheck<BannedServiceDbContext>();
+// --------------------
+// Layers DI
+// --------------------
+builder.Services.AddInfrastructure();
+builder.Services.AddApplication();
 
+// --------------------
+// App
+// --------------------
 var app = builder.Build();
 
-// Global exception handler => ProblemDetails
-app.UseExceptionHandler();
+// Global error -> ProblemDetails
+app.UseAppExceptionHandling();
 
-app.MapHealthChecks("/health");
-
-if (app.Environment.IsDevelopment())
+// Swagger
+app.UseSwagger();
+app.UseSwaggerUI(o =>
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+    o.SwaggerEndpoint("/swagger/v1/swagger.json", "BannedService API v1");
+    o.RoutePrefix = "swagger";
+});
 
+// Routing + CORS
+app.UseRouting();
+app.UseCors("DevCors");
+
+// Controllers
 app.MapControllers();
 
+// --------------------
+// (Optional) Auto-migrate on start
+// включается: AutoMigrate=true (env or appsettings)
+// --------------------
+var autoMigrate = app.Configuration.GetValue<bool>("AutoMigrate");
+if (autoMigrate)
+{
+    using var scope = app.Services.CreateScope();
+    var db = scope.ServiceProvider.GetRequiredService<BannedServiceDbContext>();
+    db.Database.Migrate();
+}
 
 app.Run();
-
-// для тестов / будущих интеграционных тестов
-public partial class Program { }
