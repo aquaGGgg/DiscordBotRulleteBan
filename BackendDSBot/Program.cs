@@ -83,4 +83,7 @@ if (autoMigrate)
     db.Database.Migrate();
 }
 
+
+app.MapGet("/", () => "ServerIsLive");
+
 app.Run();
