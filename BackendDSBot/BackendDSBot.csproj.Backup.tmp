@@ -50,8 +50,6 @@
 		<Folder Include="Domain/Tickets\" />
 		<Folder Include="Domain/Users\" />
 		<Folder Include="Filters\" />
-		<Folder Include="Infrastructure\" />
-		<Folder Include="Infrastructure/Persistence\" />
 		<Folder Include="Infrastructure/Persistence/Configurations\" />
 		<Folder Include="Infrastructure/Persistence/Entities\" />
 		<Folder Include="Infrastructure/Persistence/Migrations\" />
@@ -76,7 +74,6 @@
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 			<PrivateAssets>all</PrivateAssets>
 		</PackageReference>
-		<PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore" Version="8.0.*" />
 		<PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.*" />
 		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.*" />
 	</ItemGroup>
