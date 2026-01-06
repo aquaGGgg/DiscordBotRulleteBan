@@ -1,17 +1,18 @@
 {
   "name": "nodejsdsbot",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "Discord roulette bot client",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon src/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
-    "discord.js": "^14.25.1"
+    "axios": "^1.13.2",
+    "discord.js": "^14.25.1",
+    "dotenv": "^16.6.1"
   },
   "devDependencies": {
     "nodemon": "^3.1.11"
