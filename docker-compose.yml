@@ -65,6 +65,7 @@ services:
     environment:
       NODE_ENV: ${NODE_ENV}
       VITE_API_BASE_URL: ${VITE_API_BASE_URL}
+      VITE_ADMIN_API_KEY: super-secret-admin-key
     ports:
       - "${ADMIN_PORT}:5173"
     volumes:
@@ -85,6 +86,10 @@ services:
     environment:
       NODE_ENV: ${NODE_ENV}
       DISCORD_TOKEN: ${DISCORD_TOKEN}
+      CLIENT_ID: ${CLIENT_ID}
+      GUILD_ID: ${GUILD_ID}
+      JAIL_CHANNEL_ID: ${JAIL_CHANNEL_ID}
+      JOBS_CHANNEL_ID: ${JOBS_CHANNEL_ID}
       BOT_BACKEND_BASE_URL: ${BOT_BACKEND_BASE_URL}
     volumes:
       - ./NodeJSDSBot:/app

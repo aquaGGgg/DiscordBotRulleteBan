@@ -1,93 +1,66 @@
-const axios = require("axios");
+const API_BASE = process.env.BOT_BACKEND_BASE_URL || "http://localhost:8080";
 
-const BASE_URL = process.env.BOT_BACKEND_BASE_URL || "http://backend:8080";
+const WORKER_ID = `discord-bot-${process.env.GUILD_ID || "default"}`;
 
-async function createJob(guildId, type, payload) {
-  const url = `${BASE_URL}/bot/jobs`;
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
-  const body = {
-    guildId,
-    type,
-    payload: payload || {}
-  };
+const fetchWithRetry = async (url, options, retries = 3) => {
+  let lastErr;
 
-  console.log("[backend] POST", url, "type =", type);
+  for (let i = 0; i < retries; i++) {
+    try {
+      const res = await fetch(url, options);
 
-  try {
-    const res = await axios.post(url, body, { timeout: 10000 });
-    console.log("[backend] createJob OK, id =", res.data.id);
-    return res.data;
-  } catch (err) {
-    if (err.response) {
-      console.error(
-        "[backend] createJob ERROR status",
-        err.response.status,
-        "data:",
-        err.response.data
-      );
-    } else {
-      console.error("[backend] createJob ERROR", err.message);
+      if (res.ok) return res;
+
+      const err = await res.json().catch(() => ({}));
+      lastErr = new Error(`API failed: ${res.status} ${err.detail || res.statusText}`);
+    } catch (e) {
+      lastErr = e;
     }
-    throw err;
-  }
-}
 
-async function getPendingJobs(guildId) {
-  const url = `${BASE_URL}/bot/jobs/pending`;
-
-  console.log("[backend] GET", url, "guildId =", guildId);
-
-  try {
-    const res = await axios.get(url, {
-      params: { guildId },
-      timeout: 10000
-    });
-    console.log("[backend] getPendingJobs OK, count =", res.data.jobs?.length ?? 0);
-    return res.data;
-  } catch (err) {
-    if (err.response) {
-      console.error(
-        "[backend] getPendingJobs ERROR status",
-        err.response.status,
-        "data:",
-        err.response.data
-      );
-    } else {
-      console.error("[backend] getPendingJobs ERROR", err.message);
+    if (i < retries - 1) {
+      await sleep(1000 * (i + 1));
     }
-    throw err;
   }
-}
 
-async function completeJob(jobId, result) {
-  const url = `${BASE_URL}/bot/jobs/${jobId}/complete`;
-
-  const body = {
-    result: result || {}
-  };
-
-  console.log("[backend] POST", url, "complete");
-
-  try {
-    await axios.post(url, body, { timeout: 10000 });
-    console.log("[backend] completeJob OK");
-  } catch (err) {
-    if (err.response) {
-      console.error(
-        "[backend] completeJob ERROR status",
-        err.response.status,
-        "data:",
-        err.response.data
-      );
-    } else {
-      console.error("[backend] completeJob ERROR", err.message);
-    }
-    throw err;
-  }
-}
-
-module.exports = {
-  createJob,
-  getPendingJobs,
-  completeJob
+  throw lastErr || new Error("API failed: unknown error");
 };
+
+const pollJobs = async (limit = 50) => {
+  try {
+    const res = await fetchWithRetry(
+      `${API_BASE}/bot/jobs/poll?workerId=${WORKER_ID}&limit=${limit}`,
+      {
+        method: "GET",
+        headers: { Accept: "application/json" },
+      }
+    );
+
+    const data = await res.json();
+    return data.jobs || [];
+  } catch (e) {
+    return [];
+  }
+};
+
+const markJobDone = async (jobId) => {
+  const res = await fetchWithRetry(`${API_BASE}/bot/jobs/${jobId}/done`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+  });
+
+  return await res.json();
+};
+
+const markJobFailed = async (jobId, errorMessage) => {
+  const res = await fetchWithRetry(`${API_BASE}/bot/jobs/${jobId}/failed`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ error: errorMessage }),
+  });
+
+  return await res.json();
+};
+
+module.exports = { pollJobs, markJobDone, markJobFailed };

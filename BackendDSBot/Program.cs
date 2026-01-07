@@ -37,11 +37,11 @@ builder.Services.AddDbContext<BannedServiceDbContext>(opt =>
 {
     opt.UseNpgsql(cs, npg =>
     {
-        // Миграции в указанной сборке (у тебя Migrations в Infrastructure/Persistence/Migrations)
+        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ (пїЅ пїЅпїЅпїЅпїЅ Migrations пїЅ Infrastructure/Persistence/Migrations)
         npg.MigrationsAssembly(typeof(BannedServiceDbContext).Assembly.FullName);
     });
 
-    // В проде лучше выключить, но в dev полезно
+    // пїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅ пїЅ dev пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     opt.EnableDetailedErrors(builder.Environment.IsDevelopment());
     opt.EnableSensitiveDataLogging(builder.Environment.IsDevelopment());
 });

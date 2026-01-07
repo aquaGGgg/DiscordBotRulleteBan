@@ -1,20 +1,15 @@
 {
   "name": "nodejsdsbot",
   "version": "1.0.0",
-  "description": "Discord roulette bot client",
   "main": "src/index.js",
   "scripts": {
+    "start": "node src/index.js",
     "dev": "nodemon src/index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "axios": "^1.13.2",
-    "discord.js": "^14.25.1",
-    "dotenv": "^16.6.1"
-  },
-  "devDependencies": {
+    "discord.js": "^14.15.3",
+    "dotenv": "^16.4.5",
+    "node-cron": "^3.0.3",
     "nodemon": "^3.1.11"
   }
 }
