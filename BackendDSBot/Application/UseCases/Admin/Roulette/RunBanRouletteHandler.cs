@@ -15,7 +15,6 @@ namespace Application.UseCases.Admin.Roulette;
 public sealed class RunBanRouletteHandler
 {
     private readonly IConfigRepository _config;
-    private readonly IEligibleUsersRepository _eligible;
     private readonly IUserRepository _users;
     private readonly IPunishmentRepository _punishments;
     private readonly IPunishmentHistoryRepository _history;
@@ -27,7 +26,6 @@ public sealed class RunBanRouletteHandler
 
     public RunBanRouletteHandler(
         IConfigRepository config,
-        IEligibleUsersRepository eligible,
         IUserRepository users,
         IPunishmentRepository punishments,
         IPunishmentHistoryRepository history,
@@ -38,7 +36,6 @@ public sealed class RunBanRouletteHandler
         ITimeProvider time)
     {
         _config = config;
-        _eligible = eligible;
         _users = users;
         _punishments = punishments;
         _history = history;
@@ -49,7 +46,9 @@ public sealed class RunBanRouletteHandler
         _time = time;
     }
 
-    public async Task<RunBanRouletteResult> HandleAsync(RunBanRouletteCommand cmd, CancellationToken ct)
+    public async Task<RunBanRouletteResult> HandleAsync(
+        RunBanRouletteCommand cmd,
+        CancellationToken ct)
     {
         Ensure.NotNullOrWhiteSpace(cmd.GuildId, nameof(cmd.GuildId));
 
@@ -57,10 +56,12 @@ public sealed class RunBanRouletteHandler
 
         await using var tx = await _uow.BeginTransactionAsync(ct);
 
-        // lock config row to serialize roulette
         var cfg = await _config.GetForUpdateAsync(ct) ?? await _config.GetAsync(ct);
         if (cfg is null)
-            throw new AppException(new AppError(ErrorCodes.NotFound, "Config row not found. Seed id=1 required."));
+            throw new AppException(new AppError(
+                ErrorCodes.NotFound,
+                "Config row not found. Seed id=1 required."
+            ));
 
         var interval = cfg.BanRouletteIntervalSeconds;
         var bucket = $"ban:{now.ToUnixTimeSeconds() / interval}";
@@ -71,7 +72,14 @@ public sealed class RunBanRouletteHandler
             return new RunBanRouletteResult(false, bucket, 0);
         }
 
-        var all = await _eligible.GetEligibleDiscordUserIdsAsync(cmd.GuildId, limit: 5000, ct);
+        // ✅ БЕРЕМ ВСЕХ ЮЗЕРОВ ИЗ users
+        var all = await _users.GetAllDiscordUserIdsAsync(ct);
+        if (all.Count == 0)
+        {
+            await tx.CommitAsync(ct);
+            return new RunBanRouletteResult(true, bucket, 0);
+        }
+
         var pickCount = Math.Min(cfg.BanRoulettePickCount, all.Count);
         var indices = _rng.PickDistinctIndices(all.Count, pickCount);
         var picked = indices.Select(i => all[i]).ToList();
@@ -82,26 +90,58 @@ public sealed class RunBanRouletteHandler
         {
             await _users.UpsertByDiscordUserIdAsync(discordId, ct);
             var user = await _users.GetByDiscordUserIdForUpdateAsync(discordId, ct)
-                       ?? throw new AppException(new AppError(ErrorCodes.NotFound, "Upsert user failed."));
+                ?? throw new AppException(new AppError(
+                    ErrorCodes.NotFound,
+                    "Upsert user failed."
+                ));
 
-            var duration = _rng.NextInt(cfg.BanRouletteDurationMinSeconds, cfg.BanRouletteDurationMaxSeconds);
+            var duration = _rng.NextInt(
+                cfg.BanRouletteDurationMinSeconds,
+                cfg.BanRouletteDurationMaxSeconds
+            );
 
-            var active = await _punishments.GetActiveForUserForUpdateAsync(user.Id, cmd.GuildId, ct);
+            var active = await _punishments
+                .GetActiveForUserForUpdateAsync(user.Id, cmd.GuildId, ct);
+
             if (active is null)
             {
                 var endsAt = now.AddSeconds(duration);
-                var p = Punishment.CreateNew(Guid.NewGuid(), user.Id, cmd.GuildId, endsAt, priceTickets: 1, now);
+                var p = Punishment.CreateNew(
+                    Guid.NewGuid(),
+                    user.Id,
+                    cmd.GuildId,
+                    endsAt,
+                    priceTickets: 1,
+                    now
+                );
 
                 await _punishments.AddAsync(p, ct);
 
                 await _history.AddAsync(new PunishmentHistoryRecord(
-                    Guid.NewGuid(), p.Id, PunishmentHistoryEventType.Created, duration, now,
+                    Guid.NewGuid(),
+                    p.Id,
+                    PunishmentHistoryEventType.Created,
+                    duration,
+                    now,
                     JsonSerializer.Serialize(new { by = "roulette", bucket })
                 ), ct);
 
-                await EnqueueApplyAndDm(cmd.GuildId, discordId, p.Id, p.EndsAt, bucket, ct);
+                await EnqueueApplyAndDm(
+                    cmd.GuildId,
+                    discordId,
+                    p.Id,
+                    p.EndsAt,
+                    bucket,
+                    ct
+                );
 
-                winnersMeta.Add(new { discordUserId = discordId, punishmentId = p.Id, durationSeconds = duration, endsAt = p.EndsAt });
+                winnersMeta.Add(new
+                {
+                    discordUserId = discordId,
+                    punishmentId = p.Id,
+                    durationSeconds = duration,
+                    endsAt = p.EndsAt
+                });
             }
             else
             {
@@ -109,26 +149,46 @@ public sealed class RunBanRouletteHandler
                 await _punishments.UpdateAsync(active, ct);
 
                 await _history.AddAsync(new PunishmentHistoryRecord(
-                    Guid.NewGuid(), active.Id, PunishmentHistoryEventType.Extended, duration, now,
+                    Guid.NewGuid(),
+                    active.Id,
+                    PunishmentHistoryEventType.Extended,
+                    duration,
+                    now,
                     JsonSerializer.Serialize(new { by = "roulette", bucket })
                 ), ct);
 
-                await EnqueueApplyAndDm(cmd.GuildId, discordId, active.Id, active.EndsAt, bucket, ct);
+                await EnqueueApplyAndDm(
+                    cmd.GuildId,
+                    discordId,
+                    active.Id,
+                    active.EndsAt,
+                    bucket,
+                    ct
+                );
 
-                winnersMeta.Add(new { discordUserId = discordId, punishmentId = active.Id, durationSeconds = duration, endsAt = active.EndsAt });
+                winnersMeta.Add(new
+                {
+                    discordUserId = discordId,
+                    punishmentId = active.Id,
+                    durationSeconds = duration,
+                    endsAt = active.EndsAt
+                });
             }
         }
 
-        var round = new RouletteRound(
-            id: Guid.NewGuid(),
-            type: RouletteRoundType.Ban,
-            startedAt: now,
-            finishedAt: now,
-            metadataJson: JsonSerializer.Serialize(new { bucket, pickedCount = picked.Count, winners = winnersMeta }),
-            createdBy: cmd.CreatedBy
-        );
-
-        await _rounds.AddAsync(round, ct);
+        await _rounds.AddAsync(new RouletteRound(
+            Guid.NewGuid(),
+            RouletteRoundType.Ban,
+            now,
+            now,
+            JsonSerializer.Serialize(new
+            {
+                bucket,
+                pickedCount = picked.Count,
+                winners = winnersMeta
+            }),
+            cmd.CreatedBy
+        ), ct);
 
         await _uow.SaveChangesAsync(ct);
         await tx.CommitAsync(ct);
@@ -136,18 +196,38 @@ public sealed class RunBanRouletteHandler
         return new RunBanRouletteResult(true, bucket, picked.Count);
     }
 
-    private async Task EnqueueApplyAndDm(string guildId, string discordUserId, Guid punishmentId, DateTimeOffset endsAt, string bucket, CancellationToken ct)
+    private async Task EnqueueApplyAndDm(
+        string guildId,
+        string discordUserId,
+        Guid punishmentId,
+        DateTimeOffset endsAt,
+        string bucket,
+        CancellationToken ct)
     {
-        var payloadApply = JsonSerializer.Serialize(new { guildId, discordUserId, punishmentId, endsAt });
         await _createJob.HandleAsync(new CreateBotJobCommand(
-            BotJobType.APPLY_JAIL, guildId, discordUserId, payloadApply,
-            DedupKey: $"apply:{punishmentId}:{endsAt:O}", RunAfter: null
+            BotJobType.APPLY_JAIL,
+            guildId,
+            discordUserId,
+            JsonSerializer.Serialize(new { guildId, discordUserId, punishmentId, endsAt }),
+            DedupKey: $"apply:{punishmentId}:{endsAt:O}",
+            RunAfter: null
         ), ct);
 
-        var payloadDm = JsonSerializer.Serialize(new { guildId, discordUserId, kind = "ban_roulette", punishmentId, endsAt, bucket });
         await _createJob.HandleAsync(new CreateBotJobCommand(
-            BotJobType.DM_NOTIFY, guildId, discordUserId, payloadDm,
-            DedupKey: $"dm:ban_roulette:{punishmentId}:{endsAt:O}", RunAfter: null
+            BotJobType.DM_NOTIFY,
+            guildId,
+            discordUserId,
+            JsonSerializer.Serialize(new
+            {
+                guildId,
+                discordUserId,
+                kind = "ban_roulette",
+                punishmentId,
+                endsAt,
+                bucket
+            }),
+            DedupKey: $"dm:ban_roulette:{punishmentId}:{endsAt:O}",
+            RunAfter: null
         ), ct);
     }
 }

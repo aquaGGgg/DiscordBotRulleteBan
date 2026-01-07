@@ -3,6 +3,11 @@ WORKDIR /app
 
 COPY package*.json ./
 RUN npm install
+RUN apk add --no-cache ffmpeg
+RUN apk add --no-cache ffmpeg python3 make g++ \
+  && npm ci \
+  && apk del python3 make g++
+
 
 COPY . .
 EXPOSE 3000

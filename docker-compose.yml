@@ -89,8 +89,10 @@ services:
       CLIENT_ID: ${CLIENT_ID}
       GUILD_ID: ${GUILD_ID}
       JAIL_CHANNEL_ID: ${JAIL_CHANNEL_ID}
+      JAIL_ROLE_ID: ${JAIL_ROLE_ID}
       JOBS_CHANNEL_ID: ${JOBS_CHANNEL_ID}
       BOT_BACKEND_BASE_URL: ${BOT_BACKEND_BASE_URL}
+      BOT_OWNER_ID: ${BOT_OWNER_ID}
     volumes:
       - ./NodeJSDSBot:/app
       - bot_node_modules:/app/node_modules

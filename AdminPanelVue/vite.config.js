@@ -5,8 +5,8 @@ import { fileURLToPath, URL } from 'node:url'
 export default defineConfig({
   plugins: [vue()],
 
-  // 👇 ЯВНО указываем, где лежит env
-  envDir: fileURLToPath(new URL('../..', import.meta.url)),
+  // 👇 корень репозитория, где лежит .env
+  envDir: fileURLToPath(new URL('..', import.meta.url)),
 
   resolve: {
     alias: {

@@ -4,7 +4,6 @@ using Application.Abstractions.Random;
 using Application.Abstractions.Time;
 using Application.Abstractions.Transactions;
 using Application.Services.Errors;
-using Application.Services.Validation;
 using Application.UseCases.Internal.CreateBotJob;
 using Domain.BotJobs;
 using Domain.Rounds;
@@ -15,7 +14,6 @@ namespace Application.UseCases.Admin.Roulette;
 public sealed class RunTicketRouletteHandler
 {
     private readonly IConfigRepository _config;
-    private readonly IEligibleUsersRepository _eligible;
     private readonly IUserRepository _users;
     private readonly ITicketTransferRepository _transfers;
     private readonly IRouletteRoundRepository _rounds;
@@ -26,7 +24,6 @@ public sealed class RunTicketRouletteHandler
 
     public RunTicketRouletteHandler(
         IConfigRepository config,
-        IEligibleUsersRepository eligible,
         IUserRepository users,
         ITicketTransferRepository transfers,
         IRouletteRoundRepository rounds,
@@ -36,7 +33,6 @@ public sealed class RunTicketRouletteHandler
         ITimeProvider time)
     {
         _config = config;
-        _eligible = eligible;
         _users = users;
         _transfers = transfers;
         _rounds = rounds;
@@ -46,20 +42,19 @@ public sealed class RunTicketRouletteHandler
         _time = time;
     }
 
-    public async Task<RunTicketRouletteResult> HandleAsync(RunTicketRouletteCommand cmd, CancellationToken ct)
+    public async Task<RunTicketRouletteResult> HandleAsync(
+        RunTicketRouletteCommand cmd,
+        CancellationToken ct)
     {
-        Ensure.NotNullOrWhiteSpace(cmd.GuildId, nameof(cmd.GuildId));
-
         var now = _time.UtcNow;
 
         await using var tx = await _uow.BeginTransactionAsync(ct);
 
-        var cfg = await _config.GetForUpdateAsync(ct) ?? await _config.GetAsync(ct);
-        if (cfg is null)
-            throw new AppException(new AppError(ErrorCodes.NotFound, "Config row not found. Seed id=1 required."));
+        var cfg = await _config.GetForUpdateAsync(ct)
+                  ?? await _config.GetAsync(ct)
+                  ?? throw new AppException(new AppError("config_missing", "Config row not found"));
 
-        var interval = cfg.TicketRouletteIntervalSeconds;
-        var bucket = $"ticket:{now.ToUnixTimeSeconds() / interval}";
+        var bucket = $"ticket:{now.ToUnixTimeSeconds() / cfg.TicketRouletteIntervalSeconds}";
 
         if (await _rounds.ExistsForBucketAsync(RouletteRoundType.Ticket, bucket, ct))
         {
@@ -67,7 +62,15 @@ public sealed class RunTicketRouletteHandler
             return new RunTicketRouletteResult(false, bucket, 0);
         }
 
-        var all = await _eligible.GetEligibleDiscordUserIdsAsync(cmd.GuildId, limit: 5000, ct);
+        // ✅ ГЛАВНОЕ ИЗМЕНЕНИЕ: берём ВСЕХ пользователей
+        var all = await _users.GetAllDiscordUserIdsAsync(ct);
+
+        if (all.Count == 0)
+        {
+            await tx.CommitAsync(ct);
+            return new RunTicketRouletteResult(false, bucket, 0);
+        }
+
         var pickCount = Math.Min(cfg.TicketRoulettePickCount, all.Count);
         var indices = _rng.PickDistinctIndices(all.Count, pickCount);
         var picked = indices.Select(i => all[i]).ToList();
@@ -78,41 +81,64 @@ public sealed class RunTicketRouletteHandler
         {
             await _users.UpsertByDiscordUserIdAsync(discordId, ct);
             var user = await _users.GetByDiscordUserIdForUpdateAsync(discordId, ct)
-                       ?? throw new AppException(new AppError(ErrorCodes.NotFound, "Upsert user failed."));
+                       ?? throw new InvalidOperationException("User not found after upsert");
 
-            var amount = _rng.NextInt(cfg.TicketRouletteTicketsMin, cfg.TicketRouletteTicketsMax);
+            var amount = _rng.NextInt(
+                cfg.TicketRouletteTicketsMin,
+                cfg.TicketRouletteTicketsMax
+            );
 
             user.AddTickets(amount, now);
             await _users.UpdateAsync(user, ct);
 
-            await _transfers.AddAsync(new TicketTransfer(
-                id: Guid.NewGuid(),
-                fromUserId: null,
-                toUserId: user.Id,
-                amount: amount,
-                reason: TicketTransferReason.TicketRouletteReward,
-                createdAt: now
-            ), ct);
+            await _transfers.AddAsync(
+                new TicketTransfer(
+                    Guid.NewGuid(),
+                    null,
+                    user.Id,
+                    amount,
+                    TicketTransferReason.TicketRouletteReward,
+                    now
+                ),
+                ct
+            );
 
-            var payloadDm = JsonSerializer.Serialize(new { guildId = cmd.GuildId, discordUserId = discordId, kind = "ticket_roulette", amount, bucket });
-            await _createJob.HandleAsync(new CreateBotJobCommand(
-                BotJobType.DM_NOTIFY, cmd.GuildId, discordId, payloadDm,
-                DedupKey: $"dm:ticket_roulette:{bucket}:{discordId}", RunAfter: null
-            ), ct);
+            await _createJob.HandleAsync(
+                new CreateBotJobCommand(
+                    BotJobType.DM_NOTIFY,
+                    cmd.GuildId,
+                    discordId,
+                    JsonSerializer.Serialize(new
+                    {
+                        kind = "ticket_roulette",
+                        amount,
+                        bucket
+                    }),
+                    DedupKey: $"dm:ticket:{bucket}:{discordId}",
+                    RunAfter: null
+                ),
+                ct
+            );
 
             winnersMeta.Add(new { discordUserId = discordId, amount });
         }
 
-        var round = new RouletteRound(
-            id: Guid.NewGuid(),
-            type: RouletteRoundType.Ticket,
-            startedAt: now,
-            finishedAt: now,
-            metadataJson: JsonSerializer.Serialize(new { bucket, pickedCount = picked.Count, winners = winnersMeta }),
-            createdBy: cmd.CreatedBy
+        await _rounds.AddAsync(
+            new RouletteRound(
+                Guid.NewGuid(),
+                RouletteRoundType.Ticket,
+                now,
+                now,
+                JsonSerializer.Serialize(new
+                {
+                    bucket,
+                    pickedCount = picked.Count,
+                    winners = winnersMeta
+                }),
+                cmd.CreatedBy
+            ),
+            ct
         );
-
-        await _rounds.AddAsync(round, ct);
 
         await _uow.SaveChangesAsync(ct);
         await tx.CommitAsync(ct);

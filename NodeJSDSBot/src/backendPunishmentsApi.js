@@ -1,49 +1,64 @@
-const API_BASE = process.env.BOT_BACKEND_BASE_URL || "http://localhost:8080";
+// backendPunishmentsApi.js
 
-const { getMeData } = require("./backendMeApi");
+const API_BASE = process.env.BOT_BACKEND_BASE_URL || "http://backend:8080"
 
-const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+/* =========================
+   Utils
+========================= */
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
 
 const fetchWithRetry = async (url, options, retries = 3) => {
-  let lastErr;
+  let lastErr
 
   for (let i = 0; i < retries; i++) {
     try {
-      const res = await fetch(url, options);
+      const res = await fetch(url, options)
 
-      if (res.ok) return res;
+      if (res.ok) return res
 
-      const err = await res.json().catch(() => ({}));
-      lastErr = new Error(`API failed: ${res.status} ${err.detail || res.statusText}`);
+      const text = await res.text().catch(() => "")
+      lastErr = new Error(
+        `API failed: ${res.status} ${text || res.statusText}`
+      )
     } catch (e) {
-      lastErr = e;
+      lastErr = e
     }
 
-    if (i < retries - 1) {
-      await sleep(1000 * (i + 1));
-    }
+    if (i < retries - 1) await sleep(500)
   }
 
-  throw lastErr || new Error("API failed: unknown error");
-};
+  throw lastErr
+}
 
-const selfUnban = async (guildId = process.env.GUILD_ID, discordUserId) => {
-  try {
-    const res = await fetchWithRetry(`${API_BASE}/bot/self-unban`, {
+/* =========================
+   Punishments API
+========================= */
+
+/**
+ * POST /bot/self-unban
+ * backend REQUIREMENTS:
+ *  - GuildId: "default"   (STRING, EXACT)
+ *  - discordUserId
+ */
+const selfUnban = async (discordUserId) => {
+  const res = await fetchWithRetry(
+    `${API_BASE}/bot/self-unban`,
+    {
       method: "POST",
-      headers: { "Content-Type": "application/json", Accept: "application/json" },
-      body: JSON.stringify({ guildId, discordUserId }),
-    });
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify({
+        GuildId: "default",        // ← ВАЖНО: именно так
+        discordUserId,
+      }),
+    }
+  )
 
-    return await res.json();
-  } catch (e) {
-    return { released: false, chargedTickets: 0 };
-  }
-};
+  return await res.json()
+}
 
-const getPunishmentStatus = async (discordUserId) => {
-  const me = await getMeData(discordUserId);
-  return me.activePunishment || null;
-};
-
-module.exports = { selfUnban, getPunishmentStatus };
+module.exports = {
+  selfUnban,
+}

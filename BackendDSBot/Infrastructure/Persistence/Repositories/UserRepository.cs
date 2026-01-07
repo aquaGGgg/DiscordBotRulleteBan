@@ -4,7 +4,6 @@ using Infrastructure.Persistence;
 using Infrastructure.Persistence.Entities;
 using Mapping;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Storage;
 
 namespace Infrastructure.Persistence.Repositories;
 
@@ -22,13 +21,14 @@ public sealed class UserRepository : IUserRepository
 
     public async Task<User?> GetByDiscordUserIdAsync(string discordUserId, CancellationToken ct)
     {
-        var e = await _db.Users.AsNoTracking().FirstOrDefaultAsync(x => x.DiscordUserId == discordUserId, ct);
+        var e = await _db.Users.AsNoTracking()
+            .FirstOrDefaultAsync(x => x.DiscordUserId == discordUserId, ct);
+
         return e?.ToDomain();
     }
 
     public async Task<User?> GetByDiscordUserIdForUpdateAsync(string discordUserId, CancellationToken ct)
     {
-        // Важно: возвращаем xmin явно
         var sql = """
                   SELECT id, discord_user_id, tickets_balance, created_at, updated_at, xmin
                   FROM users
@@ -42,8 +42,6 @@ public sealed class UserRepository : IUserRepository
 
     public async Task<User> UpsertByDiscordUserIdAsync(string discordUserId, CancellationToken ct)
     {
-        // Upsert через SQL, чтобы не ловить гонки на unique index.
-        // Возвращаем xmin тоже.
         var sql = """
                   INSERT INTO users (id, discord_user_id, tickets_balance, created_at, updated_at)
                   VALUES (gen_random_uuid(), @discord_user_id, 0, now(), now())
@@ -57,8 +55,6 @@ public sealed class UserRepository : IUserRepository
 
         await using var cmd = conn.CreateCommand();
         cmd.CommandText = sql;
-        if (_db.Database.CurrentTransaction is not null)
-            cmd.Transaction = _db.Database.CurrentTransaction.GetDbTransaction();
 
         var p = cmd.CreateParameter();
         p.ParameterName = "@discord_user_id";
@@ -69,40 +65,47 @@ public sealed class UserRepository : IUserRepository
         if (!await reader.ReadAsync(ct))
             throw new InvalidOperationException("Upsert user returned no row.");
 
-        // Маппим в entity вручную (чтобы не зависеть от tracking)
         var e = new UserEntity
         {
-            Id = reader.GetFieldValue<Guid>(reader.GetOrdinal("id")),
-            DiscordUserId = reader.GetString(reader.GetOrdinal("discord_user_id")),
-            TicketsBalance = reader.GetInt32(reader.GetOrdinal("tickets_balance")),
-            CreatedAt = reader.GetFieldValue<DateTimeOffset>(reader.GetOrdinal("created_at")),
-            UpdatedAt = reader.GetFieldValue<DateTimeOffset>(reader.GetOrdinal("updated_at")),
-            RowVersion = reader.GetFieldValue<uint>(reader.GetOrdinal("xmin"))
+            Id = reader.GetFieldValue<Guid>(0),
+            DiscordUserId = reader.GetString(1),
+            TicketsBalance = reader.GetInt32(2),
+            CreatedAt = reader.GetFieldValue<DateTimeOffset>(3),
+            UpdatedAt = reader.GetFieldValue<DateTimeOffset>(4),
+            RowVersion = reader.GetFieldValue<uint>(5)
         };
 
         return e.ToDomain();
     }
 
-    public Task AddAsync(User user, CancellationToken ct)
+   public Task AddAsync(User user, CancellationToken ct)
+{
+    var e = new UserEntity
     {
-        var e = new UserEntity
-        {
-            Id = user.Id,
-            DiscordUserId = user.DiscordUserId,
-            TicketsBalance = user.TicketsBalance,
-            CreatedAt = user.CreatedAt,
-            UpdatedAt = user.UpdatedAt
-        };
+        Id = user.Id,
+        DiscordUserId = user.DiscordUserId,
+        TicketsBalance = user.TicketsBalance,
+        CreatedAt = user.CreatedAt,
+        UpdatedAt = user.UpdatedAt
+    };
 
-        _db.Users.Add(e);
-        return Task.CompletedTask;
-    }
+    _db.Users.Add(e);
+    return Task.CompletedTask;
+}
+
 
     public async Task UpdateAsync(User user, CancellationToken ct)
     {
-        var e = await _db.Users.FirstOrDefaultAsync(x => x.Id == user.Id, ct)
-                ?? throw new InvalidOperationException("User not found.");
-
+        var e = await _db.Users.FirstAsync(x => x.Id == user.Id, ct);
         e.Apply(user);
+    }
+
+    // ✅ ДОБАВЛЕНО
+    public async Task<IReadOnlyList<string>> GetAllDiscordUserIdsAsync(CancellationToken ct)
+    {
+        return await _db.Users
+            .AsNoTracking()
+            .Select(x => x.DiscordUserId)
+            .ToListAsync(ct);
     }
 }

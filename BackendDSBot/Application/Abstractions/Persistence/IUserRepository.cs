@@ -11,8 +11,10 @@ public interface IUserRepository
 
     Task AddAsync(User user, CancellationToken ct);
 
-    // Для сценариев, где надо гарантировать "не ушли в минус" при параллельных списаниях:
     Task<User?> GetByDiscordUserIdForUpdateAsync(string discordUserId, CancellationToken ct);
 
     Task UpdateAsync(User user, CancellationToken ct);
+
+    // ✅ ДОБАВЛЕНО: все пользователи для рулетки
+    Task<IReadOnlyList<string>> GetAllDiscordUserIdsAsync(CancellationToken ct);
 }
