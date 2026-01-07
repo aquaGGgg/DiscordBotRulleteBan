@@ -3,7 +3,6 @@ using Infrastructure;
 using Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
 using Middleware;
-using Domain.Rounds;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,7 +14,7 @@ builder.Services.AddSwaggerGen(o =>
     o.SwaggerDoc("v1", new() { Title = "BannedService API", Version = "v1" });
 });
 
-// CORS (AdminPanel dev)
+// CORS (Admin panel dev)
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("DevCors", p =>
@@ -38,17 +37,9 @@ builder.Services.AddDbContext<BannedServiceDbContext>(opt =>
 {
     opt.UseNpgsql(cs, npg =>
     {
-<<<<<<< Updated upstream
-        // �������� � ��������� ������ (� ���� Migrations � Infrastructure/Persistence/Migrations)
         npg.MigrationsAssembly(typeof(BannedServiceDbContext).Assembly.FullName);
     });
 
-    // � ����� ����� ���������, �� � dev �������
-=======
-        npg.MigrationsAssembly(typeof(BannedServiceDbContext).Assembly.FullName);
-    });
-
->>>>>>> Stashed changes
     opt.EnableDetailedErrors(builder.Environment.IsDevelopment());
     opt.EnableSensitiveDataLogging(builder.Environment.IsDevelopment());
 });
@@ -57,14 +48,13 @@ builder.Services.AddDbContext<BannedServiceDbContext>(opt =>
 builder.Services.AddInfrastructure();
 builder.Services.AddApplication();
 
+// Background workers options
 builder.Services.Configure<Application.BackgroundJobs.Options.WorkersOptions>(
     builder.Configuration.GetSection("Workers"));
 
-
-// App
 var app = builder.Build();
 
-// Global error -> ProblemDetails
+// Global error handling
 app.UseAppExceptionHandling();
 
 // Swagger
@@ -82,9 +72,7 @@ app.UseCors("DevCors");
 // Controllers
 app.MapControllers();
 
-
-// ===== INITIAL CONFIG SEED (RAW SQL, SAFE) =====
-// ===== INITIAL CONFIG SEED (FINAL, WORKING) =====
+// Initial config seed
 using (var scope = app.Services.CreateScope())
 {
     var db = scope.ServiceProvider.GetRequiredService<BannedServiceDbContext>();
@@ -118,19 +106,18 @@ using (var scope = app.Services.CreateScope())
             SELECT 1 FROM config WHERE id = 1
         );
     ",
-    cfg.GetValue<int>("BanRouletteIntervalSeconds"),
-    cfg.GetValue<int>("BanRoulettePickCount"),
-    cfg.GetValue<int>("BanRouletteDurationMinSeconds"),
-    cfg.GetValue<int>("BanRouletteDurationMaxSeconds"),
-    cfg.GetValue<int>("TicketRouletteIntervalSeconds"),
-    cfg.GetValue<int>("TicketRoulettePickCount"),
-    cfg.GetValue<int>("TicketRouletteTicketsMin"),
-    cfg.GetValue<int>("TicketRouletteTicketsMax"),
-    cfg.GetValue<string?>("EligibleRoleId"),
-    cfg.GetValue<string?>("JailVoiceChannelId")
+        cfg.GetValue<int>("BanRouletteIntervalSeconds"),
+        cfg.GetValue<int>("BanRoulettePickCount"),
+        cfg.GetValue<int>("BanRouletteDurationMinSeconds"),
+        cfg.GetValue<int>("BanRouletteDurationMaxSeconds"),
+        cfg.GetValue<int>("TicketRouletteIntervalSeconds"),
+        cfg.GetValue<int>("TicketRoulettePickCount"),
+        cfg.GetValue<int>("TicketRouletteTicketsMin"),
+        cfg.GetValue<int>("TicketRouletteTicketsMax"),
+        cfg.GetValue<string>("EligibleRoleId"),
+        cfg.GetValue<string>("JailVoiceChannelId")
     );
 }
-
 
 // Health check
 app.MapGet("/", () => "ServerIsLive");
