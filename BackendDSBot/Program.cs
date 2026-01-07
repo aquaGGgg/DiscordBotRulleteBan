@@ -3,6 +3,7 @@ using Infrastructure;
 using Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
 using Middleware;
+using Domain.Rounds;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -37,16 +38,22 @@ builder.Services.AddDbContext<BannedServiceDbContext>(opt =>
 {
     opt.UseNpgsql(cs, npg =>
     {
+<<<<<<< Updated upstream
         // �������� � ��������� ������ (� ���� Migrations � Infrastructure/Persistence/Migrations)
         npg.MigrationsAssembly(typeof(BannedServiceDbContext).Assembly.FullName);
     });
 
     // � ����� ����� ���������, �� � dev �������
+=======
+        npg.MigrationsAssembly(typeof(BannedServiceDbContext).Assembly.FullName);
+    });
+
+>>>>>>> Stashed changes
     opt.EnableDetailedErrors(builder.Environment.IsDevelopment());
     opt.EnableSensitiveDataLogging(builder.Environment.IsDevelopment());
 });
 
-// Layers DI
+// Layers
 builder.Services.AddInfrastructure();
 builder.Services.AddApplication();
 
@@ -75,15 +82,57 @@ app.UseCors("DevCors");
 // Controllers
 app.MapControllers();
 
-var autoMigrate = app.Configuration.GetValue<bool>("AutoMigrate");
-if (autoMigrate)
+
+// ===== INITIAL CONFIG SEED (RAW SQL, SAFE) =====
+// ===== INITIAL CONFIG SEED (FINAL, WORKING) =====
+using (var scope = app.Services.CreateScope())
 {
-    using var scope = app.Services.CreateScope();
     var db = scope.ServiceProvider.GetRequiredService<BannedServiceDbContext>();
-    db.Database.Migrate();
+    var cfg = app.Configuration.GetSection("InitialConfig");
+
+    if (!cfg.Exists())
+        throw new InvalidOperationException("InitialConfig section missing in appsettings.json");
+
+    await db.Database.ExecuteSqlRawAsync(@"
+        INSERT INTO config (
+            id,
+            ban_roulette_interval_seconds,
+            ban_roulette_pick_count,
+            ban_roulette_duration_min_seconds,
+            ban_roulette_duration_max_seconds,
+            ticket_roulette_interval_seconds,
+            ticket_roulette_pick_count,
+            ticket_roulette_tickets_min,
+            ticket_roulette_tickets_max,
+            eligible_role_id,
+            jail_voice_channel_id,
+            updated_at
+        )
+        SELECT
+            1,
+            {0}, {1}, {2}, {3},
+            {4}, {5}, {6}, {7},
+            {8}, {9},
+            NOW()
+        WHERE NOT EXISTS (
+            SELECT 1 FROM config WHERE id = 1
+        );
+    ",
+    cfg.GetValue<int>("BanRouletteIntervalSeconds"),
+    cfg.GetValue<int>("BanRoulettePickCount"),
+    cfg.GetValue<int>("BanRouletteDurationMinSeconds"),
+    cfg.GetValue<int>("BanRouletteDurationMaxSeconds"),
+    cfg.GetValue<int>("TicketRouletteIntervalSeconds"),
+    cfg.GetValue<int>("TicketRoulettePickCount"),
+    cfg.GetValue<int>("TicketRouletteTicketsMin"),
+    cfg.GetValue<int>("TicketRouletteTicketsMax"),
+    cfg.GetValue<string?>("EligibleRoleId"),
+    cfg.GetValue<string?>("JailVoiceChannelId")
+    );
 }
 
 
+// Health check
 app.MapGet("/", () => "ServerIsLive");
 
 app.Run();
