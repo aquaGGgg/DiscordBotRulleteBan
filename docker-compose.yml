@@ -91,7 +91,7 @@ services:
       JAIL_CHANNEL_ID: ${JAIL_CHANNEL_ID}
       JAIL_ROLE_ID: ${JAIL_ROLE_ID}
       JOBS_CHANNEL_ID: ${JOBS_CHANNEL_ID}
-      BOT_BACKEND_BASE_URL: ${BOT_BACKEND_BASE_URL}
+      BOT_BACKEND_BASE_URL: "http://backend:8080"
       BOT_OWNER_ID: ${BOT_OWNER_ID}
     volumes:
       - ./NodeJSDSBot:/app

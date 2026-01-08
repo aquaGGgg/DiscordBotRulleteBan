@@ -76,6 +76,9 @@ app.MapControllers();
 using (var scope = app.Services.CreateScope())
 {
     var db = scope.ServiceProvider.GetRequiredService<BannedServiceDbContext>();
+
+    await db.Database.MigrateAsync();
+
     var cfg = app.Configuration.GetSection("InitialConfig");
 
     if (!cfg.Exists())

@@ -1,34 +1,43 @@
-const API_BASE = process.env.BOT_BACKEND_BASE_URL || "http://localhost:8080";
+const API_BASE = process.env.BOT_BACKEND_BASE_URL || "http://backend:8080"
+const { getMeData } = require("./backendMeApi")
 
-const { getMeData } = require("./backendMeApi");
+/* =========================
+   API BASE NORMALIZER
+========================= */
+function effectiveBaseUrl(raw) {
+  const v = String(raw || "").trim()
+  if (!v) return "http://backend:8080"
+  if (v.includes("localhost")) return v.replace("localhost", "backend")
+  if (v.includes("127.0.0.1")) return v.replace("127.0.0.1", "backend")
+  return v
+}
+const API_BASE_EFFECTIVE = effectiveBaseUrl(API_BASE)
 
-const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
 
 const fetchWithRetry = async (url, options, retries = 3) => {
-  let lastErr;
+  let lastErr
 
   for (let i = 0; i < retries; i++) {
     try {
-      const res = await fetch(url, options);
+      const res = await fetch(url, options)
 
-      if (res.ok) return res;
+      if (res.ok) return res
 
-      const err = await res.json().catch(() => ({}));
-      lastErr = new Error(`API failed: ${res.status} ${err.detail || res.statusText}`);
+      const text = await res.text().catch(() => "")
+      lastErr = new Error(`API failed: ${res.status} ${text || res.statusText}`)
     } catch (e) {
-      lastErr = e;
+      lastErr = e
     }
 
-    if (i < retries - 1) {
-      await sleep(1000 * (i + 1));
-    }
+    if (i < retries - 1) await sleep(1000 * (i + 1))
   }
 
-  throw lastErr || new Error("API failed: unknown error");
-};
+  throw lastErr || new Error("API failed: unknown error")
+}
 
 const transferTickets = async (fromDiscordUserId, toDiscordUserId, amount) => {
-  const res = await fetchWithRetry(`${API_BASE}/bot/tickets/transfer`, {
+  const res = await fetchWithRetry(`${API_BASE_EFFECTIVE}/bot/tickets/transfer`, {
     method: "POST",
     headers: { "Content-Type": "application/json", Accept: "application/json" },
     body: JSON.stringify({
@@ -36,14 +45,19 @@ const transferTickets = async (fromDiscordUserId, toDiscordUserId, amount) => {
       toDiscordUserId,
       amount: Number(amount),
     }),
-  });
+  })
 
-  return await res.json();
-};
+  const txt = await res.text().catch(() => "")
+  try {
+    return JSON.parse(txt)
+  } catch {
+    return { ok: true, message: txt }
+  }
+}
 
 const getTicketsBalance = async (discordUserId) => {
-  const me = await getMeData(discordUserId);
-  return me.ticketsBalance || 0;
-};
+  const me = await getMeData(discordUserId)
+  return me.ticketsBalance || 0
+}
 
-module.exports = { transferTickets, getTicketsBalance };
+module.exports = { transferTickets, getTicketsBalance }

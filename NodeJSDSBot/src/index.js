@@ -26,7 +26,7 @@ const {
 const { upsertUser } = require("./backendUsersApi")
 const { checkEligibleStatus } = require("./backendEligibleApi")
 const { pollJobs, markJobDone, markJobFailed } = require("./backendJobsApi")
-const { getMeData } = require("./backendMeApi")
+const { getMeDataCached } = require("./backendMeApi") // 👈 добавил cached (старое можно оставить, но используем cached)
 const { selfUnban } = require("./backendPunishmentsApi")
 const { transferTickets, getTicketsBalance } = require("./backendTicketsApi")
 
@@ -87,6 +87,50 @@ const {
 
 if (!DISCORD_TOKEN || !CLIENT_ID) log.error("ENV missing: DISCORD_TOKEN / CLIENT_ID")
 if (!GUILD_ID || !JAIL_CHANNEL_ID) log.error("ENV missing: GUILD_ID / JAIL_CHANNEL_ID")
+
+/* =========================
+   FORMAT HELPERS (добавил)
+========================= */
+const pad2 = (n) => String(n).padStart(2, "0")
+
+function formatDuration(ms) {
+  if (!Number.isFinite(ms) || ms <= 0) return "0s"
+  const totalSec = Math.floor(ms / 1000)
+  const sec = totalSec % 60
+  const totalMin = Math.floor(totalSec / 60)
+  const min = totalMin % 60
+  const totalHr = Math.floor(totalMin / 60)
+  const hr = totalHr % 24
+  const days = Math.floor(totalHr / 24)
+
+  if (days > 0) return `${days}d ${pad2(hr)}:${pad2(min)}:${pad2(sec)}`
+  if (totalHr > 0) return `${pad2(totalHr)}:${pad2(min)}:${pad2(sec)}`
+  if (totalMin > 0) return `${totalMin}m ${pad2(sec)}s`
+  return `${sec}s`
+}
+
+function extractRemainingMs(activePunishment) {
+  if (!activePunishment) return null
+
+  // если backend прямо отдает remainingSeconds/remainingMs
+  if (Number.isFinite(activePunishment.remainingMs)) return activePunishment.remainingMs
+  if (Number.isFinite(activePunishment.remainingSeconds)) return activePunishment.remainingSeconds * 1000
+
+  // если отдает дату окончания
+  const raw =
+    activePunishment.releaseAt ||
+    activePunishment.endsAt ||
+    activePunishment.endAt ||
+    activePunishment.expiresAt ||
+    activePunishment.until ||
+    activePunishment.endTimeUtc ||
+    activePunishment.releaseTimeUtc
+
+  if (!raw) return null
+  const end = new Date(raw).getTime()
+  if (!Number.isFinite(end)) return null
+  return Math.max(0, end - Date.now())
+}
 
 /* =========================
    JAIL VOICE
@@ -263,6 +307,11 @@ async function deployCommands() {
 const beforeJailChannelByUser = new Map()
 
 /* =========================
+   JAIL HOLD (удержание)
+========================= */
+const jailedUsers = new Set() // discord user ids (string)
+
+/* =========================
    JOB PROCESSOR
 ========================= */
 async function processJob(job) {
@@ -326,6 +375,8 @@ async function processJob(job) {
     try {
       await m.voice.setChannel(jail)
       log.jail(`✅ посажен ${m.user.username} (${m.id})`)
+      jailedUsers.add(m.id)
+      log.jail(`🧷 HOLD ON: ${m.user.username} (${m.id}) теперь удерживается в jail`)
     } catch (e) {
       log.error(`setChannel failed: ${e?.message || e}`)
       return
@@ -348,15 +399,21 @@ async function processJob(job) {
       return
     }
 
+    // ✅ ВАЖНО: выключаем HOLD СРАЗУ, даже если prevChannel неизвестен
+    if (jailedUsers.has(m.id)) {
+      jailedUsers.delete(m.id)
+      log.jail(`🧷 HOLD OFF: ${m.user.username} (${m.id}) больше не удерживается (release start)`)
+    }
+
     const prev = beforeJailChannelByUser.get(m.id)
     if (!prev) {
-      log.jail(`нет сохранённого prevChannel для ${m.user.username} — пропуск`)
+      log.jail(`нет сохранённого prevChannel для ${m.user.username} — отпускаю без возврата`)
       return
     }
 
     const dest = guild.channels.cache.get(prev)
     if (!dest) {
-      log.jail(`prev channel не найден: ${prev} — пропуск`)
+      log.jail(`prev channel не найден: ${prev} — отпускаю без возврата`)
       return
     }
 
@@ -401,6 +458,46 @@ cron.schedule("*/5 * * * * *", async () => {
 })
 
 /* =========================
+   VOICE HOLD LISTENER (удержание + логи)
+========================= */
+client.on("voiceStateUpdate", async (oldState, newState) => {
+  try {
+    const userId = newState?.id
+    if (!userId) return
+
+    if (!jailedUsers.has(userId)) return
+    if (newState.member?.user?.bot) return
+
+    const oldCh = oldState?.channelId || "NONE"
+    const newCh = newState?.channelId || "NONE"
+
+    if (oldCh === newCh) return
+
+    log.jail(`🚪 jailed user moved: ${userId} ${oldCh} -> ${newCh}`)
+
+    if (!newState.channelId) {
+      log.jail(`🚪 jailed user LEFT voice: ${userId} (disconnect) — удержим при следующем заходе`)
+      return
+    }
+
+    if (newState.channelId === JAIL_CHANNEL_ID) return
+
+    const guild = newState.guild
+    const jail = guild.channels.cache.get(JAIL_CHANNEL_ID)
+    if (!jail) {
+      log.error(`HOLD: JAIL channel not found: ${JAIL_CHANNEL_ID}`)
+      return
+    }
+
+    log.jail(`🧲 HOLD: возвращаю ${userId} обратно в jail (${JAIL_CHANNEL_ID})`)
+    await newState.member.voice.setChannel(jail)
+    log.jail(`✅ HOLD MOVE: ${userId} перемещён обратно в jail`)
+  } catch (e) {
+    log.error(`voiceStateUpdate hold error: ${e?.message || e}`)
+  }
+})
+
+/* =========================
    SLASH HANDLER
 ========================= */
 client.on("interactionCreate", async i => {
@@ -421,7 +518,9 @@ client.on("interactionCreate", async i => {
       const sub = i.options.getSubcommand()
       if (sub === "list") {
         const jobs = await pollJobs(20)
-        const text = jobs.length ? jobs.slice(0, 10).map(j => `#${j.id} ${normalizeJobType(j.type)}`).join("\n") : "Пусто"
+        const text = jobs.length
+          ? jobs.slice(0, 10).map(j => `#${j.id} ${normalizeJobType(j.type)}`).join("\n")
+          : "Пусто"
         return i.editReply(text)
       }
       if (sub === "done") {
@@ -432,19 +531,66 @@ client.on("interactionCreate", async i => {
     }
 
     if (i.commandName === "me") {
-      const me = await getMeData(i.user.id)
-      return i.editReply(`🎫 ${me.ticketsBalance}`)
+      // ✅ cached чтобы бан быстро обновлялся, но без спама по API
+      const me = await getMeDataCached(i.user.id)
+
+      const tickets = me?.ticketsBalance ?? 0
+      const ap = me?.activePunishment ?? null
+      const remMs = extractRemainingMs(ap)
+
+      // красивый вывод
+      let banLine = "🟢 Ban: нет"
+      if (ap) {
+        if (remMs == null) {
+          banLine = "🔴 Ban: активен (время неизвестно)"
+        } else if (remMs <= 0) {
+          banLine = "🟡 Ban: скоро снимется / истёк"
+        } else {
+          banLine = `🔴 Ban: осталось ${formatDuration(remMs)}`
+        }
+      }
+
+      return i.editReply(`🎫 Tickets: **${tickets}**\n${banLine}`)
     }
 
     if (i.commandName === "punishments") {
       const sub = i.options.getSubcommand()
+
       if (sub === "status") {
-        // если хочешь — вернём getPunishmentStatus, но ты его не показал тут как рабочий
-        return i.editReply("ok")
+        // если хочешь — позже добавим getPunishmentStatus endpoint
+        const me = await getMeDataCached(i.user.id)
+        const ap = me?.activePunishment ?? null
+        const remMs = extractRemainingMs(ap)
+        if (!ap) return i.editReply("🟢 Ban: нет")
+        if (remMs == null) return i.editReply("🔴 Ban: активен (время неизвестно)")
+        return i.editReply(`🔴 Ban: осталось ${formatDuration(remMs)}`)
       }
+
       if (sub === "self-unban") {
-        const r = await selfUnban(i.user.id)
-        return i.editReply(r?.released ? "🔓" : "❌")
+        const r = await selfUnban(i.user.id).catch((e) => {
+          log.error(`selfUnban failed: ${e?.message || e}`)
+          return null
+        })
+
+        // максимально терпимо к разным форматам ответа
+        const released =
+          r?.released === true ||
+          r?.success === true ||
+          r?.ok === true ||
+          r?.status === "released"
+
+        if (released) {
+          return i.editReply("🔓 Разбан выполнен ✅")
+        }
+
+        const reason =
+          r?.message ||
+          r?.detail ||
+          r?.error ||
+          (typeof r === "string" ? r : null) ||
+          "Не удалось"
+
+        return i.editReply(`❌ Self-unban не сработал: ${reason}`)
       }
     }
 
