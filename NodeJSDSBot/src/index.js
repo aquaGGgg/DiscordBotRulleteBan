@@ -151,6 +151,53 @@ const JAIL_SOUND_PATH = resolveJailSoundPath()
 log.voice(`sound path = ${JAIL_SOUND_PATH}`)
 
 /* =========================
+   TOP SOUNDS (только top*.mp3)
+========================= */
+const TOP_SOUNDS_DIR = path.join(
+  __dirname,
+  "..",
+  "public",
+  "VoiceLine",
+  "secrets-of-the-brain-in-love"
+)
+
+
+let topSounds = []
+let lastTopSound = null
+
+function loadTopSounds() {
+  try {
+    topSounds = fs
+      .readdirSync(TOP_SOUNDS_DIR)
+      .filter(f => /^top\d+\.mp3$/.test(f))
+      .map(f => path.join(TOP_SOUNDS_DIR, f))
+
+    log.voice(`🎵 top sounds loaded: ${topSounds.length}`)
+  } catch (e) {
+    log.error(`top sounds load failed: ${e?.message || e}`)
+    topSounds = []
+  }
+}
+
+loadTopSounds()
+// хочешь авто-обновление списка файлов — раскомментируй
+// setInterval(loadTopSounds, 60_000)
+
+function getRandomTopNoRepeat() {
+  if (topSounds.length === 0) return null
+  if (topSounds.length === 1) return topSounds[0]
+
+  let s
+  do {
+    s = topSounds[Math.floor(Math.random() * topSounds.length)]
+  } while (s === lastTopSound)
+
+  lastTopSound = s
+  return s
+}
+
+
+/* =========================
    HELPERS
 ========================= */
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms))
@@ -223,9 +270,17 @@ function startJailVoiceLoop(guild) {
 
   const play = () => {
     if (!jailLoopActive) return
-    log.voice("play kisi-kisi.mp3")
-    jailPlayer.play(createAudioResource(JAIL_SOUND_PATH, { inlineVolume: true }))
+
+    const sound = getRandomTopNoRepeat()
+    if (!sound) {
+      log.error("❌ нет top-звуков")
+      return
+    }
+
+    log.voice(`▶ play ${path.basename(sound)}`)
+    jailPlayer.play(createAudioResource(sound, { inlineVolume: true }))
   }
+
 
   entersState(jailConnection, VoiceConnectionStatus.Ready, 15_000)
     .then(() => {
