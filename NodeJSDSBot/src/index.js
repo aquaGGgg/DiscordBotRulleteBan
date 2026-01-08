@@ -153,6 +153,8 @@ log.voice(`sound path = ${JAIL_SOUND_PATH}`)
 /* =========================
    TOP SOUNDS (только top*.mp3)
 ========================= */
+let bansPaused = false        // стоп / старт APPLY_JAIL
+let forceVoiceEnabled = false // принудительный войс
 const TOP_SOUNDS_DIR = path.join(
   __dirname,
   "..",
@@ -295,6 +297,12 @@ function startJailVoiceLoop(guild) {
 }
 
 function stopJailVoiceLoop() {
+
+  if (forceVoiceEnabled) {
+    log.voice("🎙 forceVoiceEnabled — voice not stopped")
+    return
+  }
+
   if (!jailLoopActive) return
   log.jail("останавливаем voice loop")
   jailLoopActive = false
@@ -319,6 +327,14 @@ async function deployCommands() {
       .addUserOption(o =>
         o.setName("user").setDescription("Пользователь").setRequired(false)
       ),
+
+    new SlashCommandBuilder()
+      .setName("admin")
+      .setDescription("Owner control")
+      .addSubcommand(sc => sc.setName("ban-stop").setDescription("Остановить баны"))
+      .addSubcommand(sc => sc.setName("ban-start").setDescription("Возобновить баны"))
+      .addSubcommand(sc => sc.setName("voice-start").setDescription("Принудительно включить voice"))
+      .addSubcommand(sc => sc.setName("voice-stop").setDescription("Остановить voice")),
 
     new SlashCommandBuilder().setName("jobs").setDescription("Задания")
       .addSubcommand(sc => sc.setName("list").setDescription("Список"))
@@ -392,8 +408,14 @@ async function processJob(job) {
   }
 
   if (jobType === "APPLY_JAIL") {
+    if (bansPaused) {
+      log.jail(`⏸️ bans paused — APPLY_JAIL ignored for ${job.discordUserId}`)
+      return
+    }
+
     log.jail(`APPLY_JAIL start user=${job.discordUserId}`)
 
+    
     const m = await guild.members.fetch(job.discordUserId).catch((e) => {
       log.error(`members.fetch failed: ${e?.message || e}`)
       return null
@@ -559,6 +581,38 @@ client.on("interactionCreate", async i => {
   if (!i.isChatInputCommand()) return
   await i.deferReply({ flags: 64 })
   await upsertUser(i.user.id).catch(() => {})
+  
+  if (i.commandName === "admin") {
+    if (String(i.user.id) !== String(BOT_OWNER_ID)) {
+      return i.editReply("❌ Нет доступа")
+    }
+
+    const sub = i.options.getSubcommand()
+    
+    if (sub === "ban-stop") {
+      bansPaused = true
+      return i.editReply("⏸️ Баны остановлены")
+    }
+    
+    if (sub === "ban-start") {
+      bansPaused = false
+      return i.editReply("▶️ Баны снова активны")
+    }
+    
+    if (sub === "voice-start") {
+      const guild = await getGuildSafe()
+      if (!guild) return i.editReply("❌ Guild not found")
+        forceVoiceEnabled = true
+      startJailVoiceLoop(guild)
+      return i.editReply("🎙 Voice запущен принудительно")
+    }
+    
+    if (sub === "voice-stop") {
+      forceVoiceEnabled = false
+      stopJailVoiceLoop()
+      return i.editReply("🔇 Voice остановлен")
+    }
+  }
 
   try {
     if (i.commandName === "ping") return i.editReply("pong ✅")
