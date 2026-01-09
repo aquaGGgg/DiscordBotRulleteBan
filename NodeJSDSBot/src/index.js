@@ -85,8 +85,27 @@ const {
   CLIENT_ID,
 } = process.env
 
+const AUTO_ROLE_ID = "1457430506793734349" // ⚰️ Пепел Новых
+
 if (!DISCORD_TOKEN || !CLIENT_ID) log.error("ENV missing: DISCORD_TOKEN / CLIENT_ID")
 if (!GUILD_ID || !JAIL_CHANNEL_ID) log.error("ENV missing: GUILD_ID / JAIL_CHANNEL_ID")
+
+client.on("guildMemberAdd", async (member) => {
+  try {
+    if (member.user.bot) return
+
+    const role = member.guild.roles.cache.get(AUTO_ROLE_ID)
+    if (!role) {
+      log.error(`AUTO-ROLE not found: ${AUTO_ROLE_ID}`)
+      return
+    }
+
+    await member.roles.add(role)
+    log.job(`AUTO-ROLE выдал ${role.name} пользователю ${member.user.tag} (${member.id})`)
+  } catch (e) {
+    log.error(`AUTO-ROLE error: ${e?.message || e}`)
+  }
+})
 
 /* =========================
    FORMAT HELPERS (добавил)
